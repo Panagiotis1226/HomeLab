@@ -6,6 +6,8 @@ This repository serves as documentation and guide for my personal HomeLab setup 
 
 This is a living repository that will be regularly updated with new services, configurations, and lessons learned from running my HomeLab environment.
 
+My HomeLab will never use a domain name, I will only use the IP address to access the services.
+
 ## Contents
 
 - Service configurations
