@@ -1,5 +1,9 @@
 # Watchtower for one time Container Updates
 
+### 1. Create a `docker-compose.yaml` file for Watchtower.
+
+`nano docker-compose.yaml` 
+
 ```yaml
 version: "3.8"
 services:
