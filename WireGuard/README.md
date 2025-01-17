@@ -7,12 +7,6 @@ curl -L https://install.pivpn.io | bash
 ```
 
 ## 2. Configure PiVPN
-
-```bash
-pivpn add
-```
-
-#### 2.1 Configure WireGuard
 Follow the installer instructions.
 
 ### 3. Create a WireGuard Client
