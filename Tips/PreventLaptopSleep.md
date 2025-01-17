@@ -1,4 +1,4 @@
-# Tips and Tricks
+# Prevent Laptop Sleep
 
 ## If using a Laptop as a server, you can prevent it from sleeping when the lid is closed.
 
