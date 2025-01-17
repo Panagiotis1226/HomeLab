@@ -26,3 +26,19 @@ UPLOAD_LOCATION= {your_media_path}
 DB_DATA_LOCATION= {your_db_path}
 DB_PASSWORD= {your_db_password}
 ```
+### 3. Run Docker Compose
+```bash
+docker compose up -d
+```
+### 4. Access the Web Interface
+Open your browser and navigate to `http://{your_server_ip}:2282`.
+Next, you will need to create an admin user.
+
+### 5. Access Mobile App
+Insert the following into the mobile app:
+```
+http://{your_server_ip}:2282
+```
+Then, you will need to login with the admin user you created in the web interface.
+
+
