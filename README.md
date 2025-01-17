@@ -8,6 +8,8 @@ This is a living repository that will be regularly updated with new services, co
 
 My HomeLab will never use a domain name, I will only use the IP address to access the services.
 
+For some projects, I may decide to use a free Dynamic DNS service to access the services from outside my network.
+
 ## Contents
 
 - Service configurations
