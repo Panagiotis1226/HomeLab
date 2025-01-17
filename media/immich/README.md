@@ -76,3 +76,36 @@ https://{server_ip} {
 }
 
 ```
+You can optionally redirect the http port to the https port.
+Add the following to the Caddyfile:
+```yaml
+# Redirect all HTTP traffic on port 80 to HTTPS 
+http://{server_ip} { 
+	redir https://{server_ip}{uri} permanent 
+}
+```
+Restart the Caddy service:
+```bash
+systemctl restart caddy
+```
+If you have permission issues, you can run the following command to fix them:
+```bash
+sudo chown -R caddy:caddy /etc/ssl/private /etc/ssl/certs
+sudo chmod 755 /etc/ssl/certs
+sudo chmod 700 /etc/ssl/private
+sudo chmod 644 /etc/ssl/certs/immich-selfsigned.crt
+sudo chmod 600 /etc/ssl/private/immich-selfsigned.key
+```
+Then restart the Caddy service:
+```bash
+systemctl restart caddy
+```
+
+New Immich URL:
+```
+https://{server_ip}
+```
+
+For Mobile App:
+Go to advanced settings and turn on allow self-signed SSL certificates.
+Then use the new URL to login.
