@@ -1,4 +1,4 @@
-# Prevent Laptop Sleep
+# Prevent Laptop Sleep (Linux)
 
 ## If using a Laptop as a server, you can prevent it from sleeping when the lid is closed.
 
