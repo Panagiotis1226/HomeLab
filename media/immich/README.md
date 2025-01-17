@@ -20,7 +20,9 @@ wget -O .env https://github.com/immich-app/immich/releases/latest/download/examp
 ### 2. Configure .env File
 Edit the .env file to set your desired configuration.
 Example: 
-- TZ=Europe/London
-- UPLOAD_LOCATION= {your_media_path}
-- DB_DATA_LOCATION= {your_db_path}
-- DB_PASSWORD= {your_db_password}
+```yaml 
+TZ=Europe/London
+UPLOAD_LOCATION= {your_media_path}
+DB_DATA_LOCATION= {your_db_path}
+DB_PASSWORD= {your_db_password}
+```
