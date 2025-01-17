@@ -2,8 +2,9 @@
 
 ### 1. Create a `docker-compose.yaml` file for Watchtower.
 
-`nano docker-compose.yaml` 
+Run `nano docker-compose.yaml` to create the file.
 
+Add the following to the file:
 ```yaml
 version: "3.8"
 services:
