@@ -11,7 +11,7 @@ Download the Minecraft Server Jar from the official website or from a trusted so
 
 ### 2. Run the Minecraft Server Jar
 
-Create a script to run the Minecraft Server Jar.
+#### 2.1 Create a script to run the Minecraft Server Jar.
 For Linux/MacOS:
 ```bash
 nano run_server.sh
