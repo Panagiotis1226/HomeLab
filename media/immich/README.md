@@ -47,7 +47,13 @@ To update Immich, simply run the following command:
 docker compose pull
 docker compose up -d
 ```
-### 7. Optional: Enable HTTPS, and Reverse Proxy
+### 7. Optional: Enable HTTPS, Self-Signed SSL, and Reverse Proxy
+
+#### 7.1. Create Self-Signed SSL
+```bash 
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/immich-selfsigned.key -out /etc/ssl/certs/immich-selfsigned.crt
+```
+#### 7.2. Install & Configure Caddy
 ```bash
 apt update && apt install caddy -y
 nano /etc/caddy/Caddyfile
@@ -88,6 +94,8 @@ Restart the Caddy service:
 ```bash
 systemctl restart caddy
 ```
+
+#### 7.3. Fix Permission Issues with SSL
 If you have permission issues, you can run the following command to fix them:
 ```bash
 sudo chown -R caddy:caddy /etc/ssl/private /etc/ssl/certs
@@ -100,7 +108,7 @@ Then restart the Caddy service:
 ```bash
 systemctl restart caddy
 ```
-
+#### 7.4. New Immich Access
 New Immich URL:
 ```
 https://{server_ip}
