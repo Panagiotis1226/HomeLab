@@ -1,4 +1,4 @@
-# Immich Installation Guide Without Domain Name
+# Immich Installation Guide
 
 ## Prerequisites
 - Docker and Docker Compose installed
