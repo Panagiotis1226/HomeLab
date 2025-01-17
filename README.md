@@ -31,3 +31,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 ⚠️ Note: This repository is actively maintained and updated regularly with new content.
+⚠️ Note: I am not a professional, I am just a computer science student who loves to learn and share.
+⚠️ Note: I do not claim that this is the best way to setup your home lab, it is just the way I did it.
