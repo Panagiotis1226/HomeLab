@@ -41,4 +41,9 @@ http://{your_server_ip}:2282
 ```
 Then, you will need to login with the admin user you created in the web interface.
 
-
+### 6. Updating Immich
+To update Immich, simply run the following command:
+```bash
+docker compose pull
+docker compose up -d
+```
