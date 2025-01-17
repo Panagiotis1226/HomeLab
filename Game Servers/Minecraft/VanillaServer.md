@@ -54,4 +54,18 @@ eula=true
 ```
 
 #### 3.3 Now re-run the script to start the Minecraft Server.
+For Linux/MacOS:
+```bash
+./run_server.sh
+```
+
+For Windows:
+```bash
+run_server.bat
+```
+
+### 4. Access the Minecraft Server
+Server IP: `{server_ip}`
+Port: `25565`
+
 
