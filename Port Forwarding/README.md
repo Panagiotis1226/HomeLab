@@ -7,7 +7,7 @@
 
 ## Steps
 
-### 1. Access the Bell GigaHub Portal
+### 1. Access the Bell GigaHub Portal (192.168.2.1)
 
 ### 2. Login with Admin Credentials
 
