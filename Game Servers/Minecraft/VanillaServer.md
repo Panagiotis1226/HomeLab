@@ -26,6 +26,19 @@ Add the following to the script:
 java -Xmx1024M -Xms1024M -jar {server_jar} nogui
 ```
 
+You can modify the `-Xmx` (Max Memory) and `-Xms` (Initial Memory) to your desired memory allocation.
+
 ### 3. Configure the Minecraft Server
 
 ### 4. Start the Minecraft Server
+
+#### 4.1 Run the script to start the Minecraft Server.
+For Linux/MacOS:
+```bash
+./run_server.sh
+```
+
+For Windows:
+```bash
+run_server.bat
+```
