@@ -45,13 +45,19 @@ To update Immich, simply run the following command:
 docker compose pull
 docker compose up -d
 ```
-### 7. Optional: Enable HTTPS, Self-Signed SSL, and Reverse Proxy
 
-#### 7.1. Create Self-Signed SSL
+### 7. Access Immich from Anywhere
+To access Immich from anywhere outside your network, you'll need to set up a VPN.
+
+See the [WireGuard Setup Guide](../../WireGuard/README.md) for detailed installation instructions.
+
+### 8. Optional: Enable HTTPS, Self-Signed SSL, and Reverse Proxy
+
+#### 8.1. Create Self-Signed SSL
 ```bash 
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/immich-selfsigned.key -out /etc/ssl/certs/immich-selfsigned.crt
 ```
-#### 7.2. Install & Configure Caddy
+#### 8.2. Install & Configure Caddy
 ```bash
 apt update && apt install caddy -y
 nano /etc/caddy/Caddyfile
@@ -85,7 +91,7 @@ http://{server_ip} {
 }
 ```
 
-#### 7.3. Fix Permission Issues with SSL
+#### 8.3. Fix Permission Issues with SSL
 If you have permission issues, you can run the following command to fix them:
 ```bash
 sudo chown -R caddy:caddy /etc/ssl/private /etc/ssl/certs
@@ -98,7 +104,7 @@ Then restart the Caddy service:
 ```bash
 systemctl restart caddy
 ```
-#### 7.4. New Immich Access
+#### 8.4. New Immich Access
 New Immich URL:
 ```
 https://{server_ip}
