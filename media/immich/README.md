@@ -47,3 +47,32 @@ To update Immich, simply run the following command:
 docker compose pull
 docker compose up -d
 ```
+### 7. Optional: Enable HTTPS, and Reverse Proxy
+```bash
+apt update && apt install caddy -y
+nano /etc/caddy/Caddyfile
+```
+Replace the following to the Caddyfile:
+```yaml
+#:80 {
+	# Set this path to your site's directory.
+	#root * /usr/share/caddy
+
+	# Enable the static file server.
+	#file_server
+
+	# Another common task is to set up a reverse proxy:
+	# reverse_proxy localhost:8080
+
+	# Or serve a PHP site through php-fpm:
+	# php_fastcgi localhost:9000
+#}
+
+# Adding the new site with a custom TLS certificate and reverse proxy:
+# Reverse proxy with custom TLS for to server IP (change this IP to the server ip)
+https://{server_ip} {
+	tls /etc/ssl/certs/immich-selfsigned.crt /etc/ssl/private/immich-selfsigned.key
+	reverse_proxy 127.0.0.1:2283
+}
+
+```
