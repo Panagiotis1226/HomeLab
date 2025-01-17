@@ -52,3 +52,6 @@ Add the following to the file:
 ```bash
 eula=true
 ```
+
+#### 3.3 Now re-run the script to start the Minecraft Server.
+
