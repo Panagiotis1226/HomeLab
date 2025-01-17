@@ -1,5 +1,3 @@
-# media/immich/installation.md
-
 # Immich Installation Guide
 
 ## Prerequisites
