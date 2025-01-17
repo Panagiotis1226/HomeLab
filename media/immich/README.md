@@ -57,40 +57,32 @@ apt update && apt install caddy -y
 nano /etc/caddy/Caddyfile
 ```
 Replace the following to the Caddyfile:
-```yaml
-#:80 {
-	# Set this path to your site's directory.
-	#root * /usr/share/caddy
+```Caddyfile
+# Default site configuration (commented out)
+#{
+    # Set this path to your site's directory.
+    #root * /usr/share/caddy
 
-	# Enable the static file server.
-	#file_server
+    # Enable the static file server.
+    #file_server
 
-	# Another common task is to set up a reverse proxy:
-	# reverse_proxy localhost:8080
+    # Another common task is to set up a reverse proxy:
+    # reverse_proxy localhost:8080
 
-	# Or serve a PHP site through php-fpm:
-	# php_fastcgi localhost:9000
+    # Or serve a PHP site through php-fpm:
+    # php_fastcgi localhost:9000
 #}
 
-# Adding the new site with a custom TLS certificate and reverse proxy:
-# Reverse proxy with custom TLS for to server IP (change this IP to the server ip)
+# Reverse proxy with custom TLS for server IP (change this IP to the server ip)
 https://{server_ip} {
-	tls /etc/ssl/certs/immich-selfsigned.crt /etc/ssl/private/immich-selfsigned.key
-	reverse_proxy 127.0.0.1:2283
+    tls /etc/ssl/certs/immich-selfsigned.crt /etc/ssl/private/immich-selfsigned.key
+    reverse_proxy 127.0.0.1:2283
 }
 
-```
-You can optionally redirect the http port to the https port.
-Add the following to the Caddyfile:
-```yaml
 # Redirect all HTTP traffic on port 80 to HTTPS 
-http://{server_ip} { 
-	redir https://{server_ip}{uri} permanent 
+http://{server_ip} {
+    redir https://{server_ip}{uri} permanent
 }
-```
-Restart the Caddy service:
-```bash
-systemctl restart caddy
 ```
 
 #### 7.3. Fix Permission Issues with SSL
