@@ -75,8 +75,16 @@ This will scale down the web server to 1 Apache container (1 in total).
 
 This will reload the NGINX configuration without downtime.
 
-### 7. To stop the web server, use the `docker compose stop` command.
+### 7. Manage the web server
 
-### 8. To remove the web server, use the `docker compose down` command.
+#### 7.1 To stop the web server, use the `docker compose stop` command.
+
+This will stop the web server without removing the containers.
+
+#### 7.2 To start the web server, use the `docker compose start` command.
+
+This will start the web server without the need to re-create the containers.
+
+#### 7.3 To remove the web server, use the `docker compose down` command.
 
 This will stop and remove all containers and networks.
