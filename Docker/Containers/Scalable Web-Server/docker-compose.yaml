@@ -22,3 +22,5 @@ services:
 networks:
   webnet:
 
+volumes:
+  apache_data:
