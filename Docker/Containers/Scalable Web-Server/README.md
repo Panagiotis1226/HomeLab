@@ -55,6 +55,7 @@ http {
     }
 }
 ```
+Make sure that both docker-compose.yaml and nginx.conf are in the same directory.
 
 ### 3. Run the `docker compose up -d` command to start the containers.
 
