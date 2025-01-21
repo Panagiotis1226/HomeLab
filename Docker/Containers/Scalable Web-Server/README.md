@@ -47,7 +47,6 @@ http {
 ```
 
 ### 3. Run the `docker compose up -d` command to start the containers.
-`docker compose up -d`
 
 ### 4. Access the web server at `http://localhost:8080` or `http://<your-ip>:8080`.
 
@@ -67,9 +66,7 @@ This will scale down the web server to 1 Apache container (1 in total).
 This will reload the NGINX configuration without downtime.
 
 ### 7. To stop the web server, use the `docker compose stop` command.
-`docker compose stop`
 
 ### 8. To remove the web server, use the `docker compose down` command.
-`docker compose down`
 
 This will stop and remove all containers and networks.
