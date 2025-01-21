@@ -1,5 +1,15 @@
 # Dynamically Scalable Web-Server
 
+## Requirements
+- Docker
+- Docker Compose
+
+## Reason to use a Dynamically Scalable Web-Server
+- To have a web server that can scale up and down dynamically.
+- To have a web server that can handle a large number of requests.
+- To have a web server that can handle a large number of users.
+- To have a web server that does not go down when you need to scale it up or down.
+
 ### 1. Use the [docker-compose.yaml](docker-compose.yaml) or copy the following:
 
 ```yaml
@@ -50,7 +60,7 @@ http {
 
 ### 4. Access the web server at `http://localhost:8080` or `http://<your-ip>:8080`.
 
-### 5. To scale the web server, use the `docker compose --scale apache=<number>` command.
+### 5. To scale up the web server, use the `docker compose --scale apache=<number>` command.
 `docker compose --scale apache=3`
 
 This will create 3 Apache containers (3 in total) and load balance the requests between them.
