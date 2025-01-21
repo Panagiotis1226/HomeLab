@@ -1,0 +1,24 @@
+services:
+  apache:
+    image: httpd:latest
+    expose:
+      - "80"  # Expose port 80 internally within the Docker network
+    volumes:
+      - apache_data:/var/www/html  # OPTIONAL: Persistent volume
+    networks:
+      - webnet
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"  # Make NGINX accessible on host port 8080
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro  # Custom NGINX config
+    depends_on:
+      - apache
+    networks:
+      - webnet
+
+networks:
+  webnet:
+
