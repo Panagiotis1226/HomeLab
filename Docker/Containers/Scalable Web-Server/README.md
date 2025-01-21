@@ -4,7 +4,7 @@
 - Docker
 - Docker Compose
 
-## Reason to use a Dynamically Scalable Web-Server
+## Reasons to use a Dynamically Scalable Web-Server
 - To have a web server that can scale up and down dynamically.
 - To have a web server that can handle a large number of requests.
 - To have a web server that can handle a large number of users.
