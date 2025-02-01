@@ -3,6 +3,7 @@
 ## Prerequisites
 - Spigot Server Jar
 - Java JDK 17+
+- Nano (Any file editor)
 
 ## Steps
 
