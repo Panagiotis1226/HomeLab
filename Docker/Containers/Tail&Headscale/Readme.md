@@ -2,7 +2,7 @@ HEADSCALE EXIT NODE SETUP GUIDE
 ==============================
 
 This guide explains how to set up a Headscale exit node on a Proxmox LXC container, allowing your iPhone to route traffic through your server while maintaining access to local services.
-
+ 
 PREREQUISITES
 ------------
 • Proxmox LXC container
