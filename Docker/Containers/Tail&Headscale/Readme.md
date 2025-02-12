@@ -572,7 +572,7 @@ IPHONE SETUP
 2. Log in with custom server: https://sub.domain.com
 3. Get auth key:
    ```
-   docker exec headscale headscale --namespace default preauthkeys create
+   docker exec headscale headscale -u default preauthkeys create
    ```
 4. Enable "Use VPN" in Tailscale settings
 
