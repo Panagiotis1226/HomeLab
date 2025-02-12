@@ -1,0 +1,34 @@
+volumes:
+  caddy:
+  headscale:
+
+services:
+  caddy:
+    image: "caddy"
+    container_name: "caddy"
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
+  headscale:
+    image: "headscale/headscale"
+    container_name: "headscale"
+    command: serve
+    restart: unless-stopped
+    ports:
+      - "3478:3478/udp"  # STUN
+      - "50443:50443"    # gRPC
+      - "8080:8080"
+      - "9443:9443" #DERP
+    volumes:
+      - headscale:/var/lib/headscale
+      - ./config.yaml:/etc/headscale/config.yaml
+
+  headscale-ui:
+    image: "simcu/headscale-ui"
+    container_name: "headscale-ui"
+    restart: unless-stopped  

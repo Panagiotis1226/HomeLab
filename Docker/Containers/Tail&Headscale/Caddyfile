@@ -1,0 +1,15 @@
+sub.domain.com {
+    reverse_proxy headscale:8080
+}
+
+# Local access via IP address
+local_ip:80 {
+    # UI route
+    route /manager/* {
+        reverse_proxy headscale-ui:80
+    }
+    # Default route for headscale
+    route /* {
+        reverse_proxy headscale:8080
+    }
+}
