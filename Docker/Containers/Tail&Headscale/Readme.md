@@ -7,7 +7,7 @@ PREREQUISITES
 ------------
 • Proxmox LXC container <br>
 • Docker and docker-compose installed<br>
-• A Domain Name
+• A Domain Name <br>
 • Ports forwarded: 
   - 3478/udp (STUN)
   - 9443/tcp (DERP)
