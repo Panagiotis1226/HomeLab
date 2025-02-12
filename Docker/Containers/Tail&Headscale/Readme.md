@@ -5,8 +5,8 @@ This guide explains how to set up a Headscale exit node on a Proxmox LXC contain
 
 PREREQUISITES
 ------------
-• Proxmox LXC container
-• Docker and docker-compose installed
+• Proxmox LXC container <br>
+• Docker and docker-compose installed<br>
 • Ports forwarded: 
   - 3478/udp (STUN)
   - 9443/tcp (DERP)
