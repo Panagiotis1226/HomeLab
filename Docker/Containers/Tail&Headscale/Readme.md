@@ -33,7 +33,7 @@ STEP-BY-STEP SETUP
 
 3. IP FORWARDING AND NAT
    -------------------
-   A. Enable IP Forwarding:
+   A. Enable IP Forwarding: <br>
       Add to /etc/sysctl.conf:
       ```
       net.ipv4.ip_forward = 1
@@ -550,20 +550,20 @@ STEP-BY-STEP SETUP
 
 TROUBLESHOOTING
 --------------
-1. "Unable to modify read-only option: 'unprivileged'"
-   • Solution: Create new privileged container
-   • Cannot be modified after creation
+1. "Unable to modify read-only option: 'unprivileged'"<br>
+   • Solution: Create new privileged container<br>
+   • Cannot be modified after creation<br>
 
-2. "Tailscale could not connect to DERP relay server"
-   • Check port forwarding: 3478/udp, 9443/tcp, 50443/tcp
-   • Verify DERP configuration in config.yaml
+2. "Tailscale could not connect to DERP relay server"<br>
+   • Check port forwarding: 3478/udp, 9443/tcp, 50443/tcp<br>
+   • Verify DERP configuration in config.yaml<br>
 
-3. "Cannot enable route: route not available"
-   • Advertise routes first with --advertise-routes
-   • Then enable routes with routes enable command
+3. "Cannot enable route: route not available"<br>
+   • Advertise routes first with --advertise-routes<br>
+   • Then enable routes with routes enable command<br>
 
-4. "0.0.0.0/0 advertised without IPv6 counterpart"
-   • Include both IPv4 and IPv6 routes:
+4. "0.0.0.0/0 advertised without IPv6 counterpart" <br>
+   • Include both IPv4 and IPv6 routes: <br>
    • Use: --advertise-routes=<your_local_subnet/24,0.0.0.0/0,::/0
 
 IPHONE SETUP
@@ -578,6 +578,6 @@ IPHONE SETUP
 
 VERIFICATION
 -----------
-✓ Check whatismyip.com - Should show server's IP
-✓ Access local network (192.168.8.x) - Should work with VPN | Replace with your network
+✓ Check whatismyip.com - Should show server's IP <br>
+✓ Access local network (192.168.8.x) - Should work with VPN | Replace with your network <br>
 ✓ Verify routes: docker exec headscale headscale routes list
