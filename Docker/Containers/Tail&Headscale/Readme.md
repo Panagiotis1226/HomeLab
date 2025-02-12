@@ -71,7 +71,7 @@ STEP-BY-STEP SETUP
       4. Make executable: sudo chmod +x /etc/network/if-pre-up.d/iptables
 
 4. HEADSCALE CONFIGURATION
-   ---------------------
+   ----------------------
    Update config.yaml:
    ```yaml
    derp:
