@@ -1,5 +1,5 @@
-HEADSCALE EXIT NODE SETUP GUIDE
-==============================
+Setting up Headscale + DERP for Tailscale
+=========================================
 
 This guide explains how to set up a Headscale exit node on a Proxmox LXC container, allowing your iPhone or any device to route traffic through your server while maintaining access to local services.
 
