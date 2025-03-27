@@ -3,6 +3,19 @@
 ## Summary
 This guide is for people that have many external SSDs, USBs, HDDs or even internal drives that you want to merge and use as 1 filesystem. MergeFS allows you to combine multiple storage devices while also allowing you to unplug them and reconnect them without problems.
 
+## ⚠️ Warning
+- There may still be some risk of data loss or corruption
+- Using many different devices together could become unstable
+- This is not a replacement for proper backups
+- Test thoroughly before using with critical data
+
+## Use Cases
+
+- **Photo Management**: Great for an Immich Photo server to store your images across multiple storage devices as a single pool
+- **Virtualization**: Good to merge for Proxmox storage, allowing you to expand your VM storage across multiple drives
+- **Media Servers**: Perfect for Plex/Jellyfin servers that need large, expandable storage
+- **Backup Solutions**: Create large backup targets by combining smaller drives
+
 ## Setup Process
 
 1. **Plug in Drives**
