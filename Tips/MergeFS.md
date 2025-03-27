@@ -70,3 +70,37 @@ If the first option doesn't work, try to remount both the unplugged drive and re
    mergerfs -o defaults,allow_other,use_ino,direct_io,nonempty,cache.files=off,dropcacheonclose=true,symlinkify=true,category.create=mfs,fsname=virtualDisk /mnt/SSD:/mnt/USB /mnt/merged
    ```
    - Recreate the merged filesystem with all drives 
+
+## Making MergeFS Persistent
+
+To ensure your MergeFS setup automatically mounts at system boot, add entries to the `/etc/fstab` file:
+
+1. **Add Individual Drive Entries**
+   ```bash
+   sudo nano /etc/fstab
+   ```
+   
+   Add these lines to the file (replace UUIDs with your actual drive UUIDs):
+   ```
+   UUID=your-ssd-uuid  /mnt/SSD  ext4  defaults  0  2
+   UUID=your-usb-uuid  /mnt/USB  ext4  defaults  0  2
+   ```
+
+2. **Add MergeFS Entry**
+   Add this line after the individual drive entries:
+   ```
+   /mnt/SSD:/mnt/USB  /mnt/merged  fuse.mergerfs  defaults,allow_other,use_ino,direct_io,nonempty,cache.files=off,dropcacheonclose=true,symlinkify=true,category.create=mfs  0  0
+   ```
+
+3. **Test the Configuration**
+   ```bash
+   sudo mount -a
+   ```
+   
+   This will attempt to mount all entries in fstab. If there are no errors, your setup will persist across reboots.
+
+4. **Handling Removable Drives**
+   For drives that may be disconnected, add the `nofail` option to prevent boot issues:
+   ```
+   UUID=your-usb-uuid  /mnt/USB  ext4  defaults,nofail  0  2
+   ``` 
