@@ -37,4 +37,4 @@ b. mount -U {UUID} /mnt/SSD or /mnt/USB
    - Remount the drive that was unplugged using its UUID
 
 c. mergerfs -o defaults,allow_other,use_ino,direct_io,nonempty,cache.files=off,dropcacheonclose=true,symlinkify=true,category.create=mfs,fsname=virtualDisk /mnt/SSD:/mnt/USB /mnt/merged
-   - Recreate the merged filesystem with all drives 
+   - Recreate the merged filesystem with all drives  
