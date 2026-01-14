@@ -46,7 +46,7 @@ services:
 - **WG_HOST**: Public IP or DNS name clients will use to reach your server.
 - **WG_PORT**: UDP port for WireGuard (default 51820). Ensure it’s open on your firewall/router.
 - **WG_UI_PORT**: HTTP port for the wg-easy admin UI (default 51821). Access via `http://server:51821`.
-- **WG_DEFAULT_ADDRESS**: Base address for clients, e.g., `10.10.0.2` etc. (replace `x` with a number range).
+- **WG_DEFAULT_ADDRESS**: Base address for clients, e.g., `10.10.0.2` etc. (do not replace `x`).
 - **WG_DEFAULT_DNS**: DNS given to clients (e.g., `1.1.1.1`).
 - **INSECURE=true**: Allows HTTP (no TLS) for the UI; use only on trusted networks or put behind a reverse proxy with HTTPS.
 - **DISABLE_IPV6=true**: Disables IPv6 inside WireGuard; set to `false` if you need IPv6.
