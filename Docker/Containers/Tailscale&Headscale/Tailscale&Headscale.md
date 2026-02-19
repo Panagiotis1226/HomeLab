@@ -49,6 +49,9 @@ services:
     image: headscale/headscale:0.28.0
     container_name: headscale
     restart: unless-stopped
+    ports:
+      - "3478:3478/udp"
+      - "41641:41641/udp"
     expose:
       - "8080"
     volumes:
@@ -63,7 +66,6 @@ services:
     ports:
       - "443:443"
       - "80:80"
-      - "3478:3478/udp"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
