@@ -6,7 +6,7 @@ Self-hosted Headscale (Tailscale control server) behind Caddy with TLS via Let's
 
 - Docker & Docker Compose
 - A domain pointing to your server (e.g. `tail.yourdomain.com`)
-- Ports 80/tcp, 443/tcp, and 3478/udp available and port-forwarded
+- Ports 80/tcp, 443/tcp, 41641/udp, and 3478/udp available and port-forwarded
 
 ---
 
