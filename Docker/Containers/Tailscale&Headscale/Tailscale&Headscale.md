@@ -184,6 +184,42 @@ Headscale will be available at `https://tail.yourdomain.com` (or your configured
 
 ---
 
+## 6. Allow Exit Node + Subnet routes
+
+### On the node you want to connect to the network
+
+```bash
+tailscale up \
+  --login-server https://tail.domain.com \
+  --authkey KEY \
+  --advertise-exit-node \
+  --advertise-routes=192.168.1.0/24,192.168.2.0/24 \
+  --accept-routes \
+  --accept-dns
+```
+
+### On Headscale server
+
+Approve routes:
+
+```bash
+docker exec headscale headscale nodes approve-routes -r 192.168.1.0/24,0.0.0.0/0,192.168.2.0/24 -i ID_NUMBER
+```
+
+Verify:
+
+```bash
+docker exec headscale headscale nodes list-routes
+```
+
+Create pre-auth key:
+
+```bash
+docker exec headscale headscale preauthkeys create -u ID
+```
+
+---
+
 ## File layout
 
 ```
