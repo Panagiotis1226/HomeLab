@@ -190,7 +190,7 @@ Headscale will be available at `https://tail.yourdomain.com` (or your configured
 
 ```bash
 tailscale up \
-  --login-server https://tail.domain.com \
+  --login-server https://tail.yourdomain.com \
   --authkey KEY \
   --advertise-exit-node \
   --advertise-routes=192.168.1.0/24,192.168.2.0/24 \
