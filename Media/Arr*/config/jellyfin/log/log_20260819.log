@@ -1,0 +1,876 @@
+[2026-08-19 01:03:21.553 -04:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:21.787 -04:00] [INF] [4] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "all interfaces"
+[2026-08-19 01:03:21.828 -04:00] [INF] [4] Main: Jellyfin version: "10.11.11"
+[2026-08-19 01:03:21.832 -04:00] [INF] [4] Main: Environment Variables: ["[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_PublishedServerUrl, http://localhost:8096]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2026-08-19 01:03:21.835 -04:00] [INF] [4] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2026-08-19 01:03:21.835 -04:00] [INF] [4] Main: Operating system: "Ubuntu 26.04 LTS"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Architecture: Arm64
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: 64-Bit Process: True
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: User Interactive: True
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Processor count: 8
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Program data path: "/config/data"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Log directory path: "/config/log"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Config directory path: "/config"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Cache path: "/config/cache"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Temp directory path: "/tmp/jellyfin"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Web resources path: "/usr/share/jellyfin/web"
+[2026-08-19 01:03:21.836 -04:00] [INF] [4] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2026-08-19 01:03:21.860 -04:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/config/data/data"` (Network) successfully checked with "34.5TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:03:21.863 -04:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/config/cache"` (Network) successfully checked with "34.5TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:03:21.864 -04:00] [INF] [4] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "34.5TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:03:21.894 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:21.941 -04:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 01:03:21.944 -04:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 01:03:21.944 -04:00] [INF] [4] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 01:03:21.960 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-08-19 01:03:21.963 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: System initialisation detected. Seed data.
+[2026-08-19 01:03:22.158 -04:00] [WRN] [6] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.8917ms with message '"Server is still starting up."'
+[2026-08-19 01:03:22.584 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"UpdateNormalizedUsername".
+[2026-08-19 01:03:22.586 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"CleanMusicArtist".
+[2026-08-19 01:03:22.587 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration ef103419-8451-40d8-9f34-d1a8e93a1679-"CreateUserLoggingConfigFile".
+[2026-08-19 01:03:22.588 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 4124c2cd-e939-4ffb-9be9-9b311c413638-"DisableTranscodingThrottling".
+[2026-08-19 01:03:22.589 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration cf6fabc2-9fbe-4933-84a5-ffe52ef22a58-"FixAudioData".
+[2026-08-19 01:03:22.589 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"FixDates".
+[2026-08-19 01:03:22.589 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"FixLibrarySubtitleDownloadLanguages".
+[2026-08-19 01:03:22.589 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 615dfa9e-2497-4dbb-a472-61938b752c5b-"FixPlaylistOwner".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 3793eb59-bc8c-456c-8b9f-bd5a62a42978-"MigrateActivityLogDb".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 5bd72f41-e6f3-4f60-90aa-09869abe0e22-"MigrateAuthenticationDb".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 06387815-c3cc-421f-a888-fb5f9992bea8-"MigrateDisplayPreferencesDb".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateKeyframeData".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryDb".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryDbCompatibilityCheck".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateLibraryUserData".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MigrateRatingLevels".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 5c4b82a2-f053-4009-bd05-b6fcad82f14c-"MigrateUserDb".
+[2026-08-19 01:03:22.590 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"MoveExtractedFiles".
+[2026-08-19 01:03:22.594 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"RefreshInternalDateModified".
+[2026-08-19 01:03:22.594 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a81f75e0-8f43-416f-a5e8-516ccab4d8cc-"RemoveDownloadImagesInAdvance".
+[2026-08-19 01:03:22.595 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration acbe17b7-8435-4a83-8b64-6fcf162cb9bd-"RemoveDuplicateExtras".
+[2026-08-19 01:03:22.596 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 96c156a2-7a13-4b3b-a8b8-fb80c94d20c0-"RemoveDuplicatePlaylistChildren".
+[2026-08-19 01:03:22.596 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration null-"ReseedFolderFlag".
+[2026-08-19 01:03:22.597 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 9b354818-94d5-4b68-ac49-e35cb85f9d84-"CreateNetworkConfiguration".
+[2026-08-19 01:03:22.597 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a8e61960-7726-4450-8f3d-82c12daabbcb-"MigrateEncodingOptions".
+[2026-08-19 01:03:22.597 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration a6dcacf4-c057-4ef9-80d3-61cef9ddb4f0-"MigrateMusicBrainzTimeout".
+[2026-08-19 01:03:22.598 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration 4fb5c950-1991-11ee-9b4b-0800200c9a66-"MigrateNetworkConfiguration".
+[2026-08-19 01:03:22.598 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Seed migration e73b777d-cd5c-4e71-957a-b86b3660b7cf-"RenameEnableGroupingIntoCollections".
+[2026-08-19 01:03:22.600 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: Migration system initialisation completed.
+[2026-08-19 01:03:22.606 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage PreInitialisation.
+[2026-08-19 01:03:22.614 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:22.628 -04:00] [INF] [4] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-08-19 01:03:22.657 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 01:03:22.658 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 01:03:22.658 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 01:03:22.658 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 01:03:22.659 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 01:03:22.659 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 01:03:22.659 -04:00] [INF] [4] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 01:03:22.714 -04:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 01:03:22.714 -04:00] [INF] [4] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 01:03:22.715 -04:00] [INF] [4] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 01:03:22.719 -04:00] [INF] [4] Main: Prepare system for possible migrations
+[2026-08-19 01:03:22.743 -04:00] [INF] [4] Main: A migration will attempt to modify the jellyfin.db, will attempt to backup the file now.
+[2026-08-19 01:03:22.744 -04:00] [INF] [4] Main: Jellyfin database has been backed up as "20260819050322"
+[2026-08-19 01:03:22.753 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage CoreInitialisation.
+[2026-08-19 01:03:22.754 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200514181226_AddActivityLog"
+[2026-08-19 01:03:22.776 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20200514181226_AddActivityLog" was successfully applied
+[2026-08-19 01:03:22.777 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200613202153_AddUsers"
+[2026-08-19 01:03:22.803 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20200613202153_AddUsers" was successfully applied
+[2026-08-19 01:03:22.803 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200728005145_AddDisplayPreferences"
+[2026-08-19 01:03:22.835 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20200728005145_AddDisplayPreferences" was successfully applied
+[2026-08-19 01:03:22.835 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20200905220533_FixDisplayPreferencesIndex"
+[2026-08-19 01:03:22.860 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20200905220533_FixDisplayPreferencesIndex" was successfully applied
+[2026-08-19 01:03:22.860 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20201004171403_AddMaxActiveSessions"
+[2026-08-19 01:03:22.876 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20201004171403_AddMaxActiveSessions" was successfully applied
+[2026-08-19 01:03:22.876 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20201204223655_AddCustomDisplayPreferences"
+[2026-08-19 01:03:22.899 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20201204223655_AddCustomDisplayPreferences" was successfully applied
+[2026-08-19 01:03:22.899 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210320181425_AddIndexesAndCollations"
+[2026-08-19 01:03:22.920 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"ImageInfos"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.921 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"ImageInfos"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.922 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Permissions"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.922 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Permissions"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.923 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Preferences"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.923 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Preferences"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.923 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Users"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.923 -04:00] [WRN] [4] Microsoft.EntityFrameworkCore.Migrations: An operation of type '"SqlOperation"' will be attempted while a rebuild of table '"Users"' is pending. The database may not be in an expected state. Review the SQL generated by this migration to help diagnose any failures. Consider moving these operations to a subsequent migration.
+[2026-08-19 01:03:22.932 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20210320181425_AddIndexesAndCollations" was successfully applied
+[2026-08-19 01:03:22.932 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210407110544_NullableCustomPrefValue"
+[2026-08-19 01:03:22.965 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20210407110544_NullableCustomPrefValue" was successfully applied
+[2026-08-19 01:03:22.965 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20210814002109_AddDevices"
+[2026-08-19 01:03:22.999 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20210814002109_AddDevices" was successfully applied
+[2026-08-19 01:03:22.999 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20221022080052_AddIndexActivityLogsDateCreated"
+[2026-08-19 01:03:23.021 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20221022080052_AddIndexActivityLogsDateCreated" was successfully applied
+[2026-08-19 01:03:23.021 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230526173516_RemoveEasyPassword"
+[2026-08-19 01:03:23.058 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20230526173516_RemoveEasyPassword" was successfully applied
+[2026-08-19 01:03:23.058 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230626233818_AddTrickplayInfos"
+[2026-08-19 01:03:23.080 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20230626233818_AddTrickplayInfos" was successfully applied
+[2026-08-19 01:03:23.080 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20230923170422_UserCastReceiver"
+[2026-08-19 01:03:23.103 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20230923170422_UserCastReceiver" was successfully applied
+[2026-08-19 01:03:23.103 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20240729140605_AddMediaSegments"
+[2026-08-19 01:03:23.133 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20240729140605_AddMediaSegments" was successfully applied
+[2026-08-19 01:03:23.133 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20240928082930_MarkSegmentProviderIdNonNullable"
+[2026-08-19 01:03:23.155 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20240928082930_MarkSegmentProviderIdNonNullable" was successfully applied
+[2026-08-19 01:03:23.155 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241020103111_LibraryDbMigration"
+[2026-08-19 01:03:23.177 -04:00] [WRN] [6] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.0437ms with message '"Server is still starting up."'
+[2026-08-19 01:03:23.210 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241020103111_LibraryDbMigration" was successfully applied
+[2026-08-19 01:03:23.210 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241111131257_AddedCustomDataKey"
+[2026-08-19 01:03:23.240 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241111131257_AddedCustomDataKey" was successfully applied
+[2026-08-19 01:03:23.240 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241111135439_AddedCustomDataKeyKey"
+[2026-08-19 01:03:23.301 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241111135439_AddedCustomDataKeyKey" was successfully applied
+[2026-08-19 01:03:23.302 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112152323_FixAncestorIdConfig"
+[2026-08-19 01:03:23.405 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241112152323_FixAncestorIdConfig" was successfully applied
+[2026-08-19 01:03:23.405 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112232041_FixMediaStreams"
+[2026-08-19 01:03:23.477 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241112232041_FixMediaStreams" was successfully applied
+[2026-08-19 01:03:23.477 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241112234144_FixMediaStreams2"
+[2026-08-19 01:03:23.532 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241112234144_FixMediaStreams2" was successfully applied
+[2026-08-19 01:03:23.533 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20241113133548_EnforceUniqueItemValue"
+[2026-08-19 01:03:23.566 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20241113133548_EnforceUniqueItemValue" was successfully applied
+[2026-08-19 01:03:23.567 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250202021306_FixedCollation"
+[2026-08-19 01:03:23.601 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250202021306_FixedCollation" was successfully applied
+[2026-08-19 01:03:23.601 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250204092455_MakeStartEndDateNullable"
+[2026-08-19 01:03:23.645 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250204092455_MakeStartEndDateNullable" was successfully applied
+[2026-08-19 01:03:23.645 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250214031148_ChannelIdGuid"
+[2026-08-19 01:03:23.672 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250214031148_ChannelIdGuid" was successfully applied
+[2026-08-19 01:03:23.673 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250326065026_AddInheritedParentalRatingSubValue"
+[2026-08-19 01:03:23.706 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250326065026_AddInheritedParentalRatingSubValue" was successfully applied
+[2026-08-19 01:03:23.706 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250327101120_AddKeyframeData"
+[2026-08-19 01:03:23.726 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250327101120_AddKeyframeData" was successfully applied
+[2026-08-19 01:03:23.726 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250327171413_AddHdr10PlusFlag"
+[2026-08-19 01:03:23.744 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250327171413_AddHdr10PlusFlag" was successfully applied
+[2026-08-19 01:03:23.744 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250331182844_FixAttachmentMigration"
+[2026-08-19 01:03:23.786 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250331182844_FixAttachmentMigration" was successfully applied
+[2026-08-19 01:03:23.786 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250401142247_FixAncestors"
+[2026-08-19 01:03:23.817 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250401142247_FixAncestors" was successfully applied
+[2026-08-19 01:03:23.817 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250405075612_FixItemValuesIndices"
+[2026-08-19 01:03:23.848 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250405075612_FixItemValuesIndices" was successfully applied
+[2026-08-19 01:03:23.848 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250609115616_DetachUserDataInsteadOfDelete"
+[2026-08-19 01:03:23.889 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250609115616_DetachUserDataInsteadOfDelete" was successfully applied
+[2026-08-19 01:03:23.889 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250622170802_BaseItemImageInfoDateModifiedNullable"
+[2026-08-19 01:03:23.934 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250622170802_BaseItemImageInfoDateModifiedNullable" was successfully applied
+[2026-08-19 01:03:23.934 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250714044826_ResetJournalMode"
+[2026-08-19 01:03:23.956 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250714044826_ResetJournalMode" was successfully applied
+[2026-08-19 01:03:23.957 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250913211637_AddProperParentChildRelationBaseItemWithCascade"
+[2026-08-19 01:03:23.998 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250913211637_AddProperParentChildRelationBaseItemWithCascade" was successfully applied
+[2026-08-19 01:03:23.998 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20250925203415_ExtendPeopleMapKey"
+[2026-08-19 01:03:24.034 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20250925203415_ExtendPeopleMapKey" was successfully applied
+[2026-08-19 01:03:24.034 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260522092303_AddNormalizedUsername"
+[2026-08-19 01:03:24.057 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20260522092303_AddNormalizedUsername" was successfully applied
+[2026-08-19 01:03:24.058 -04:00] [INF] [4] InternalDatabaseMigration: Perform migration "20260524120336_AddUniqueNormalizedUsernameIndex"
+[2026-08-19 01:03:24.079 -04:00] [INF] [4] InternalDatabaseMigration: Migration "20260524120336_AddUniqueNormalizedUsernameIndex" was successfully applied
+[2026-08-19 01:03:24.152 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 01:03:24.152 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:24.154 -04:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.11.11.0"
+[2026-08-19 01:03:24.155 -04:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.11.11.0"
+[2026-08-19 01:03:24.155 -04:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.11.11.0"
+[2026-08-19 01:03:24.163 -04:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.11.11.0"
+[2026-08-19 01:03:24.163 -04:00] [INF] [4] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.11.11.0"
+[2026-08-19 01:03:24.186 -04:00] [INF] [4] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 5 migrations for stage AppInitialisation.
+[2026-08-19 01:03:24.186 -04:00] [INF] [4] InternalCodeMigration: Perform migration "20250420090000_AddDefaultPluginRepository"
+[2026-08-19 01:03:24.188 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 01:03:24.189 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:24.189 -04:00] [INF] [4] InternalCodeMigration: Migration "20250420090000_AddDefaultPluginRepository" was successfully applied
+[2026-08-19 01:03:24.189 -04:00] [INF] [4] InternalCodeMigration: Perform migration "20250420110000_ReaddDefaultPluginRepository"
+[2026-08-19 01:03:24.189 -04:00] [INF] [4] InternalCodeMigration: Migration "20250420110000_ReaddDefaultPluginRepository" was successfully applied
+[2026-08-19 01:03:24.190 -04:00] [INF] [4] InternalCodeMigration: Perform migration "20250420160000_AddDefaultCastReceivers"
+[2026-08-19 01:03:24.190 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 01:03:24.190 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:24.191 -04:00] [INF] [4] InternalCodeMigration: Migration "20250420160000_AddDefaultCastReceivers" was successfully applied
+[2026-08-19 01:03:24.191 -04:00] [INF] [4] InternalCodeMigration: Perform migration "20250420170000_UpdateDefaultPluginRepository"
+[2026-08-19 01:03:24.191 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 01:03:24.192 -04:00] [INF] [4] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:03:24.193 -04:00] [INF] [4] InternalCodeMigration: Migration "20250420170000_UpdateDefaultPluginRepository" was successfully applied
+[2026-08-19 01:03:24.193 -04:00] [INF] [4] InternalCodeMigration: Perform migration "20250420230000_MoveTrickplayFiles"
+[2026-08-19 01:03:24.195 -04:00] [WRN] [10] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.0028ms with message '"Server is still starting up."'
+[2026-08-19 01:03:24.420 -04:00] [INF] [4] Jellyfin.Server.Migrations.Routines.MoveTrickplayFiles: Checked: 5000 - Moved: 0 - Time: 00:00:00.2257213
+[2026-08-19 01:03:24.421 -04:00] [INF] [4] Jellyfin.Server.Migrations.Routines.MoveTrickplayFiles: Moved 0 items in 00:00:00.2266723
+[2026-08-19 01:03:24.425 -04:00] [INF] [4] InternalCodeMigration: Migration "20250420230000_MoveTrickplayFiles" was successfully applied
+[2026-08-19 01:03:24.426 -04:00] [INF] [4] Main: Attempt to cleanup JellyfinDb backup.
+[2026-08-19 01:03:24.443 -04:00] [INF] [4] Main: Kestrel is listening on "all interfaces"
+[2026-08-19 01:03:24.452 -04:00] [WRN] [17] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {1d59e9fe-c2f0-4142-ae85-a1a88e5af09a} may be persisted to storage in unencrypted form.
+[2026-08-19 01:03:24.682 -04:00] [WRN] [4] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/run/s6-rc:s6-rc-init:FBjFIL/servicedirs/svc-jellyfin/wwwroot". Static files may be unavailable.
+[2026-08-19 01:03:24.904 -04:00] [INF] [4] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-08-19 01:03:24.909 -04:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-08-19 03:00:00.000 -04:00, which is 01:56:35.0901752 from now.
+[2026-08-19 01:03:24.913 -04:00] [INF] [4] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-19 02:00:00.000 -04:00, which is 00:56:35.0862659 from now.
+[2026-08-19 01:03:24.936 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "7.1.4"
+[2026-08-19 01:03:24.959 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_rkmpp", "h264", "h264_rkmpp", "h264_cuvid", "hevc", "hevc_rkmpp", "hevc_cuvid", "mpeg1_rkmpp", "mpeg2video", "mpeg2_rkmpp", "mpeg2_cuvid", "mpeg4", "mpeg4_rkmpp", "mpeg4_cuvid", "msmpeg4", "vc1_cuvid", "vp8", "vp8_rkmpp", "libvpx", "vp8_cuvid", "vp9", "vp9_rkmpp", "libvpx-vp9", "vp9_cuvid", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-08-19 01:03:24.969 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "libx264", "h264_nvenc", "h264_v4l2m2m", "h264_rkmpp", "libx265", "hevc_nvenc", "hevc_rkmpp", "mjpeg_rkmpp", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-08-19 01:03:24.980 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "hwupload_cuda", "overlay_opencl", "overlay_cuda", "overlay_rkrga", "scale_cuda", "scale_opencl", "scale_rkrga", "tonemapx", "tonemap_cuda", "tonemap_opencl", "transpose_cuda", "transpose_opencl", "vpp_rkrga", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-08-19 01:03:25.020 -04:00] [WRN] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vaapi" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 01:03:25.027 -04:00] [WRN] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vulkan" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 01:03:25.103 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "drm", "opencl", "rkmpp"]
+[2026-08-19 01:03:27.924 -04:00] [INF] [12] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 01:03:27.929 -04:00] [INF] [15] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 01:03:28.278 -04:00] [INF] [15] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 01:03:31.526 -04:00] [INF] [4] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-08-19 01:03:31.527 -04:00] [INF] [4] Emby.Server.Implementations.ApplicationHost: ServerId: "2ad17050fd4d4aa681d7eb28863d4641"
+[2026-08-19 01:03:31.527 -04:00] [INF] [4] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-08-19 01:03:31.527 -04:00] [INF] [4] Main: Startup complete 0:00:10.2416214
+[2026-08-19 01:56:38.696 -04:00] [INF] [23] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-08-19 01:56:38.742 -04:00] [INF] [25] Main: Running query planner optimizations in the database... This might take a while
+[2026-08-19 01:56:38.854 -04:00] [INF] [25] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-08-19 01:56:38.855 -04:00] [INF] [25] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzArtistProvider"
+[2026-08-19 01:56:38.855 -04:00] [INF] [25] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2026-08-19 01:56:38.856 -04:00] [INF] [25] Emby.Server.Implementations.ApplicationHost: Disposing "PluginManager"
+[2026-08-19 01:56:42.475 -04:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:56:42.610 -04:00] [INF] [7] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "all interfaces"
+[2026-08-19 01:56:42.626 -04:00] [INF] [7] Main: Jellyfin version: "10.11.11"
+[2026-08-19 01:56:42.628 -04:00] [INF] [7] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_PublishedServerUrl, http://localhost:8096]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2026-08-19 01:56:42.628 -04:00] [INF] [7] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Operating system: "Ubuntu 26.04 LTS"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Architecture: Arm64
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: 64-Bit Process: True
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: User Interactive: True
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Processor count: 8
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Program data path: "/config/data"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Log directory path: "/config/log"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Config directory path: "/config"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Cache path: "/config/cache"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Temp directory path: "/tmp/jellyfin"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Web resources path: "/usr/share/jellyfin/web"
+[2026-08-19 01:56:42.629 -04:00] [INF] [7] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2026-08-19 01:56:42.638 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data/data"` (Network) successfully checked with "34.3TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:56:42.639 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/cache"` (Network) successfully checked with "34.3TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:56:42.639 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "34.3TiB" free which is over the minimum of "2GiB".
+[2026-08-19 01:56:42.640 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:56:42.667 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 01:56:42.669 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 01:56:42.670 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 01:56:42.690 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-08-19 01:56:42.691 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: System initialisation detected. Seed data.
+[2026-08-19 01:56:43.122 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: Migration system initialisation completed.
+[2026-08-19 01:56:43.126 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage PreInitialisation.
+[2026-08-19 01:56:43.130 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 01:56:43.138 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-08-19 01:56:43.153 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 01:56:43.153 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 01:56:43.153 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 01:56:43.153 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 01:56:43.154 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 01:56:43.154 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 01:56:43.154 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 01:56:43.202 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 01:56:43.202 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 01:56:43.202 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 01:56:43.204 -04:00] [INF] [7] Main: Prepare system for possible migrations
+[2026-08-19 01:56:43.216 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage CoreInitialisation.
+[2026-08-19 01:56:43.281 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.11.11.0"
+[2026-08-19 01:56:43.282 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.11.11.0"
+[2026-08-19 01:56:43.282 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.11.11.0"
+[2026-08-19 01:56:43.283 -04:00] [WRN] [10] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.3347ms with message '"Server is still starting up."'
+[2026-08-19 01:56:43.287 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.11.11.0"
+[2026-08-19 01:56:43.287 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.11.11.0"
+[2026-08-19 01:56:43.303 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage AppInitialisation.
+[2026-08-19 01:56:43.385 -04:00] [INF] [7] Main: Kestrel is listening on "all interfaces"
+[2026-08-19 01:56:43.645 -04:00] [WRN] [7] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/run/s6-rc:s6-rc-init:MIkLKg/servicedirs/svc-jellyfin/wwwroot". Static files may be unavailable.
+[2026-08-19 01:56:43.672 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-08-19 01:56:43.676 -04:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-08-19 03:00:00.000 -04:00, which is 01:03:16.3235685 from now.
+[2026-08-19 01:56:43.677 -04:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-19 02:00:00.000 -04:00, which is 00:03:16.3223786 from now.
+[2026-08-19 01:56:43.748 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "7.1.4"
+[2026-08-19 01:56:43.760 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_rkmpp", "h264", "h264_rkmpp", "h264_cuvid", "hevc", "hevc_rkmpp", "hevc_cuvid", "mpeg1_rkmpp", "mpeg2video", "mpeg2_rkmpp", "mpeg2_cuvid", "mpeg4", "mpeg4_rkmpp", "mpeg4_cuvid", "msmpeg4", "vc1_cuvid", "vp8", "vp8_rkmpp", "libvpx", "vp8_cuvid", "vp9", "vp9_rkmpp", "libvpx-vp9", "vp9_cuvid", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-08-19 01:56:43.767 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "libx264", "h264_nvenc", "h264_v4l2m2m", "h264_rkmpp", "libx265", "hevc_nvenc", "hevc_rkmpp", "mjpeg_rkmpp", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-08-19 01:56:43.773 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "hwupload_cuda", "overlay_opencl", "overlay_cuda", "overlay_rkrga", "scale_cuda", "scale_opencl", "scale_rkrga", "tonemapx", "tonemap_cuda", "tonemap_opencl", "transpose_cuda", "transpose_opencl", "vpp_rkrga", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-08-19 01:56:43.795 -04:00] [WRN] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vaapi" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 01:56:43.800 -04:00] [WRN] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vulkan" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 01:56:43.842 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "drm", "opencl", "rkmpp"]
+[2026-08-19 01:56:46.685 -04:00] [INF] [20] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 01:56:46.687 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 01:56:47.606 -04:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-08-19 01:56:47.606 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: ServerId: "2ad17050fd4d4aa681d7eb28863d4641"
+[2026-08-19 01:56:47.606 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-08-19 01:56:47.607 -04:00] [INF] [7] Main: Startup complete 0:00:05.3110051
+[2026-08-19 01:56:48.633 -04:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2026-08-19 02:00:00.052 -04:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Extract Chapter Images" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:00:01.008 -04:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-20 02:00:00.000 -04:00, which is 23:59:58.9918139 from now.
+[2026-08-19 02:00:26.081 -04:00] [INF] [17] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 02:00:26.085 -04:00] [INF] [17] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:00:26.125 -04:00] [WRN] [10] Jellyfin.Server.Implementations.Users.UserManager: No users, creating one with username "abc"
+[2026-08-19 02:00:26.222 -04:00] [WRN] [10] Microsoft.EntityFrameworkCore.Query: The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+[2026-08-19 02:02:15.936 -04:00] [WRN] [27] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 02:02:15.936 -04:00] [WRN] [27] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:02:15.937 -04:00] [WRN] [27] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:03:06.313 -04:00] [INF] [13] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 02:03:06.315 -04:00] [INF] [13] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:03:10.308 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 02:03:10.308 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 02:03:10.308 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 02:03:10.308 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 02:03:10.309 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 02:03:10.309 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 02:03:10.309 -04:00] [INF] [31] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 02:03:11.469 -04:00] [INF] [30] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 02:03:11.471 -04:00] [INF] [30] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:03:11.477 -04:00] [INF] [13] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-08-19 02:03:11.493 -04:00] [WRN] [13] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.494 -04:00] [WRN] [13] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.494 -04:00] [WRN] [13] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.510 -04:00] [WRN] [33] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.510 -04:00] [WRN] [33] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.510 -04:00] [WRN] [33] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:03:11.599 -04:00] [INF] [33] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:03:16.480 -04:00] [INF] [30] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has succeeded.
+[2026-08-19 02:03:16.481 -04:00] [INF] [30] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "Peter": 0/0
+[2026-08-19 02:03:16.481 -04:00] [INF] [30] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 690febaf-9ccc-4321-ab5d-0b91ee18c420
+[2026-08-19 02:03:16.564 -04:00] [INF] [32] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:05:52.439 -04:00] [INF] [23] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "admin" has been denied (IP: "172.19.0.10").
+[2026-08-19 02:05:52.441 -04:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/AuthenticateByName".
+[2026-08-19 02:06:07.743 -04:00] [INF] [23] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "admin" has been denied (IP: "172.19.0.10").
+[2026-08-19 02:06:07.744 -04:00] [ERR] [23] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/AuthenticateByName".
+[2026-08-19 02:06:23.903 -04:00] [INF] [27] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has succeeded.
+[2026-08-19 02:06:32.787 -04:00] [INF] [27] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has succeeded.
+[2026-08-19 02:06:32.788 -04:00] [INF] [27] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "Peter": 1/0
+[2026-08-19 02:06:32.788 -04:00] [INF] [27] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 690febaf-9ccc-4321-ab5d-0b91ee18c420
+[2026-08-19 02:09:52.576 -04:00] [INF] [25] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:13:40.572 -04:00] [INF] [45] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:15:17.772 -04:00] [INF] [45] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:23:01.488 -04:00] [INF] [61] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:23:36.122 -04:00] [WRN] [57] Microsoft.EntityFrameworkCore.Query: The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+[2026-08-19 02:23:37.339 -04:00] [INF] [67] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:23:37.549 -04:00] [INF] [61] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:24:15.711 -04:00] [INF] [44] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-08-19 02:24:15.720 -04:00] [WRN] [44] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:24:15.721 -04:00] [WRN] [44] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:24:15.751 -04:00] [WRN] [44] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:24:15.751 -04:00] [WRN] [44] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:24:17.312 -04:00] [WRN] [64] Microsoft.EntityFrameworkCore.Query: Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+[2026-08-19 02:24:17.413 -04:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 1 seconds
+[2026-08-19 02:24:17.414 -04:00] [INF] [64] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 02:24:42.038 -04:00] [INF] [64] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 02:24:42.059 -04:00] [WRN] [25] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.059 -04:00] [WRN] [25] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.180 -04:00] [INF] [45] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-08-19 02:24:42.190 -04:00] [WRN] [45] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.190 -04:00] [WRN] [45] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.209 -04:00] [WRN] [45] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.209 -04:00] [WRN] [45] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 02:24:42.227 -04:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:24:42.227 -04:00] [INF] [45] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 02:25:23.548 -04:00] [INF] [45] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:25:24.051 -04:00] [INF] [64] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:25:24.056 -04:00] [INF] [64] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Inside Job (2021) - S01E01 - Unpresidented [HDTV-720p][AC3 5.1][x264]-RTA.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"95d5e8cc3ce8d1e5d8bdbb8b7ccfe488-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/95d5e8cc3ce8d1e5d8bdbb8b7ccfe488%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/95d5e8cc3ce8d1e5d8bdbb8b7ccfe488.m3u8\""
+[2026-08-19 02:25:26.581 -04:00] [INF] [63] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:25:32.083 -04:00] [INF] [57] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/95d5e8cc3ce8d1e5d8bdbb8b7ccfe488.m3u8"
+[2026-08-19 02:25:33.672 -04:00] [INF] [44] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin Web" "10.11.11" playing "The Inside Job". Stopped at "6955" ms
+[2026-08-19 02:28:01.555 -04:00] [INF] [36] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:28:10.380 -04:00] [INF] [37] Emby.Server.Implementations.IO.LibraryMonitor: "tv" ("/data/media/tv") will be refreshed.
+[2026-08-19 02:28:10.389 -04:00] [WRN] [60] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 02:30:03.530 -04:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Movie", Name: "The Inside Job", Path: "/data/media/tv/Inside Job (2021) [tvdbid-365098]/Inside Job (2021) - S01E01 - Unpresidented [HDTV-720p][AC3 5.1][x264]-RTA.mkv", Id: baec43b0-9549-2ada-f417-7a982411d722
+[2026-08-19 02:30:16.163 -04:00] [INF] [39] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:30:16.461 -04:00] [INF] [35] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:31:16.280 -04:00] [INF] [37] Emby.Server.Implementations.IO.LibraryMonitor: "tv" ("/data/media/tv") will be refreshed.
+[2026-08-19 02:31:16.282 -04:00] [INF] [37] Emby.Server.Implementations.IO.LibraryMonitor: "Reacher (2022) [tvdbid-366924]" ("/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv") will be refreshed.
+[2026-08-19 02:31:22.718 -04:00] [INF] [47] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 02:31:23.730 -04:00] [INF] [60] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 02:31:37.498 -04:00] [INF] [37] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Movie", Name: "Reacher (2022) [tvdbid-366924]", Path: "/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv", Id: cdd87ed3-fe26-b7aa-a41a-b91502a8d8a6
+[2026-08-19 02:31:39.453 -04:00] [INF] [38] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Season Unknown" entry for "Reacher"
+[2026-08-19 02:31:40.832 -04:00] [INF] [7] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season null in series "Reacher"
+[2026-08-19 02:31:40.832 -04:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season Unknown", Path: "", Id: c69ca80e-2604-8625-475e-384beed7a8d5
+[2026-08-19 02:31:40.844 -04:00] [INF] [7] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Season 4" entry for "Reacher"
+[2026-08-19 02:31:53.352 -04:00] [INF] [34] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:31:53.758 -04:00] [INF] [37] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:31:53.758 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"e6e49f37fbaf7ffa33b83c47509b31e1-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/e6e49f37fbaf7ffa33b83c47509b31e1%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/e6e49f37fbaf7ffa33b83c47509b31e1.m3u8\""
+[2026-08-19 02:31:54.148 -04:00] [INF] [60] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\" -map 0:2 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/2.srt\" -map 0:3 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/3.srt\" -map 0:4 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/4.srt\" -map 0:5 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/5.srt\" -map 0:6 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/6.srt\" -map 0:7 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/7.srt\" -map 0:8 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/8.srt\" -map 0:9 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/9.srt\" -map 0:10 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/10.srt\" -map 0:11 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/11.srt\" -map 0:12 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/12.srt\" -map 0:13 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/13.srt\" -map 0:14 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/14.srt\" -map 0:15 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/15.srt\" -map 0:16 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/16.srt\" -map 0:17 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/17.srt\" -map 0:18 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/18.srt\" -map 0:19 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/19.srt\" -map 0:20 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/20.srt\" -map 0:21 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/21.srt\" -map 0:22 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/22.srt\" -map 0:23 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/23.srt\" -map 0:24 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/24.srt\" -map 0:25 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/25.srt\" -map 0:26 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/26.srt\" -map 0:27 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/27.srt\" -map 0:28 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/28.srt\" -map 0:29 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/29.srt\" -map 0:30 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/30.srt\" -map 0:31 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/31.srt\" -map 0:32 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/32.srt\" -map 0:33 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/33.srt\" -map 0:34 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/34.srt\" -map 0:35 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/35.srt\" -map 0:36 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/36.srt\" -map 0:37 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/37.srt\" -map 0:38 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/38.srt\" -map 0:39 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/39.srt\" -map 0:40 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/40.srt\""
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/2.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/3.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/4.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/5.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/6.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/7.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/8.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/9.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/10.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/11.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/12.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/13.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/14.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/15.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/16.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/17.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/18.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/19.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/20.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/21.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/22.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/23.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/24.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/25.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/26.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/27.srt"
+[2026-08-19 02:31:55.845 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/28.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/29.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/30.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/31.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/32.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/33.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/34.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/35.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/36.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/37.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/38.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/39.srt"
+[2026-08-19 02:31:55.846 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\"" to "/config/data/data/subtitles/c7/c74ee339-2862-b827-fd59-74a0b447f254/40.srt"
+[2026-08-19 02:31:57.256 -04:00] [INF] [38] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:32:12.429 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/e6e49f37fbaf7ffa33b83c47509b31e1.m3u8"
+[2026-08-19 02:32:14.012 -04:00] [INF] [37] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin Web" "10.11.11" playing "City of Brotherly Love". Stopped at "7326" ms
+[2026-08-19 02:32:45.797 -04:00] [INF] [37] Emby.Server.Implementations.IO.LibraryMonitor: "Reacher" ("/data/media/tv/Reacher (2022) [tvdbid-366924]") will be refreshed.
+[2026-08-19 02:32:45.837 -04:00] [INF] [62] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Season Unknown" entry for "Reacher"
+[2026-08-19 02:32:47.907 -04:00] [INF] [39] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season null in series "Reacher"
+[2026-08-19 02:32:47.907 -04:00] [INF] [39] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season Unknown", Path: "", Id: c69ca80e-2604-8625-475e-384beed7a8d5
+[2026-08-19 02:33:03.870 -04:00] [INF] [38] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has succeeded.
+[2026-08-19 02:33:03.870 -04:00] [INF] [38] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "Peter": 2/0
+[2026-08-19 02:33:03.870 -04:00] [INF] [38] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 690febaf-9ccc-4321-ab5d-0b91ee18c420
+[2026-08-19 02:33:04.015 -04:00] [INF] [35] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:33:19.141 -04:00] [INF] [37] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:33:20.087 -04:00] [INF] [37] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:33:20.088 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"b1b0ba63aef7de0b020497d194e990f5-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/b1b0ba63aef7de0b020497d194e990f5%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/b1b0ba63aef7de0b020497d194e990f5.m3u8\""
+[2026-08-19 02:33:22.063 -04:00] [INF] [34] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:33:37.988 -04:00] [INF] [37] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/b1b0ba63aef7de0b020497d194e990f5.m3u8"
+[2026-08-19 02:33:39.564 -04:00] [INF] [37] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin iOS" "1.8.0" playing "City of Brotherly Love". Stopped at "11623" ms
+[2026-08-19 02:33:41.987 -04:00] [INF] [34] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:33:42.641 -04:00] [INF] [39] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:34:36.441 -04:00] [INF] [39] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:34:37.153 -04:00] [INF] [35] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:34:37.154 -04:00] [INF] [35] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"ffdbe72aa25febd2a9c35f8c8d95043c-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/ffdbe72aa25febd2a9c35f8c8d95043c%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/ffdbe72aa25febd2a9c35f8c8d95043c.m3u8\""
+[2026-08-19 02:34:38.637 -04:00] [INF] [35] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map 0:3 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/3.srt\" -map 0:4 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/4.srt\" -map 0:5 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/5.srt\""
+[2026-08-19 02:34:39.345 -04:00] [INF] [47] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\"" to "/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/3.srt"
+[2026-08-19 02:34:39.345 -04:00] [INF] [47] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\"" to "/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/4.srt"
+[2026-08-19 02:34:39.345 -04:00] [INF] [47] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\"" to "/config/data/data/subtitles/7b/7bb802da-bc25-53d1-a524-c88e033fbeeb/5.srt"
+[2026-08-19 02:34:39.753 -04:00] [INF] [39] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:35:02.658 -04:00] [INF] [35] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:35:02.750 -04:00] [INF] [35] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/ffdbe72aa25febd2a9c35f8c8d95043c.m3u8"
+[2026-08-19 02:35:03.512 -04:00] [INF] [35] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:35:03.512 -04:00] [INF] [35] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:2 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"d9c919a4cdfb0a593379f3bc4f63aec6-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/d9c919a4cdfb0a593379f3bc4f63aec6%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/d9c919a4cdfb0a593379f3bc4f63aec6.m3u8\""
+[2026-08-19 02:35:05.401 -04:00] [INF] [22] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:35:39.060 -04:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:35:39.362 -04:00] [INF] [35] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:35:55.814 -04:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:35:56.004 -04:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:36:03.591 -04:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:36:03.774 -04:00] [INF] [35] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:36:40.757 -04:00] [INF] [47] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/d9c919a4cdfb0a593379f3bc4f63aec6.m3u8"
+[2026-08-19 02:36:42.334 -04:00] [INF] [47] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin iOS" "1.8.0" playing "One Small Step". Stopped at "106703" ms
+[2026-08-19 02:36:52.482 -04:00] [INF] [63] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:37:04.483 -04:00] [INF] [35] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2026-08-19 02:38:40.481 -04:00] [INF] [63] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:38:52.484 -04:00] [INF] [47] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:39:04.487 -04:00] [INF] [35] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2026-08-19 02:39:17.748 -04:00] [INF] [47] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-08-19 02:39:17.750 -04:00] [INF] [47] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:40:34.435 -04:00] [WRN] [34] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "172.19.0.1" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-08-19 02:40:34.436 -04:00] [INF] [34] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:40:39.826 -04:00] [INF] [26] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:40:45.235 -04:00] [INF] [26] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:40:45.866 -04:00] [INF] [34] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:41:42.189 -04:00] [ERR] [42] Jellyfin.Api.Controllers.DisplayPreferencesController: Invalid ViewType: ""
+[2026-08-19 02:41:42.189 -04:00] [ERR] [42] Jellyfin.Api.Controllers.DisplayPreferencesController: Invalid ViewType: ""
+[2026-08-19 02:43:09.874 -04:00] [INF] [42] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 02:43:21.609 -04:00] [WRN] [42] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "172.19.0.1" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-08-19 02:43:21.612 -04:00] [INF] [42] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:43:26.079 -04:00] [INF] [37] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-08-19 02:43:26.081 -04:00] [INF] [42] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:48:10.397 -04:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:48:10.519 -04:00] [INF] [7] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "all interfaces"
+[2026-08-19 02:48:10.538 -04:00] [INF] [7] Main: Jellyfin version: "10.11.11"
+[2026-08-19 02:48:10.539 -04:00] [INF] [7] Main: Environment Variables: ["[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_PublishedServerUrl, http://localhost:8096]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2026-08-19 02:48:10.540 -04:00] [INF] [7] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Operating system: "Ubuntu 26.04 LTS"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Architecture: Arm64
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: 64-Bit Process: True
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: User Interactive: True
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Processor count: 8
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Program data path: "/config/data"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Log directory path: "/config/log"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Config directory path: "/config"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Cache path: "/config/cache"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Temp directory path: "/tmp/jellyfin"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Web resources path: "/usr/share/jellyfin/web"
+[2026-08-19 02:48:10.541 -04:00] [INF] [7] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2026-08-19 02:48:10.551 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data/data"` (Network) successfully checked with "32.2TiB" free which is over the minimum of "2GiB".
+[2026-08-19 02:48:10.551 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/cache"` (Network) successfully checked with "32.2TiB" free which is over the minimum of "2GiB".
+[2026-08-19 02:48:10.551 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "32.2TiB" free which is over the minimum of "2GiB".
+[2026-08-19 02:48:10.553 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:48:10.590 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 02:48:10.595 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 02:48:10.596 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 02:48:10.615 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-08-19 02:48:11.103 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage PreInitialisation.
+[2026-08-19 02:48:11.110 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 02:48:11.123 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-08-19 02:48:11.145 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 02:48:11.145 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 02:48:11.146 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 02:48:11.146 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 02:48:11.146 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 02:48:11.146 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 02:48:11.146 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 02:48:11.201 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 02:48:11.201 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 02:48:11.202 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 02:48:11.205 -04:00] [INF] [7] Main: Prepare system for possible migrations
+[2026-08-19 02:48:11.222 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage CoreInitialisation.
+[2026-08-19 02:48:11.236 -04:00] [WRN] [13] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.3307ms with message '"Server is still starting up."'
+[2026-08-19 02:48:11.303 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.11.11.0"
+[2026-08-19 02:48:11.304 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.11.11.0"
+[2026-08-19 02:48:11.304 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.11.11.0"
+[2026-08-19 02:48:11.308 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.11.11.0"
+[2026-08-19 02:48:11.309 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.11.11.0"
+[2026-08-19 02:48:11.331 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage AppInitialisation.
+[2026-08-19 02:48:11.453 -04:00] [INF] [9] Main: Kestrel is listening on "all interfaces"
+[2026-08-19 02:48:11.795 -04:00] [WRN] [9] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/run/s6-rc:s6-rc-init:hgIogc/servicedirs/svc-jellyfin/wwwroot". Static files may be unavailable.
+[2026-08-19 02:48:11.812 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-08-19 02:48:11.813 -04:00] [INF] [13] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 02:48:11.817 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-08-19 03:00:00.000 -04:00, which is 00:11:48.1823504 from now.
+[2026-08-19 02:48:11.822 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-20 02:00:00.000 -04:00, which is 23:11:48.1773956 from now.
+[2026-08-19 02:48:11.911 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "7.1.4"
+[2026-08-19 02:48:11.929 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_rkmpp", "h264", "h264_rkmpp", "h264_cuvid", "hevc", "hevc_rkmpp", "hevc_cuvid", "mpeg1_rkmpp", "mpeg2video", "mpeg2_rkmpp", "mpeg2_cuvid", "mpeg4", "mpeg4_rkmpp", "mpeg4_cuvid", "msmpeg4", "vc1_cuvid", "vp8", "vp8_rkmpp", "libvpx", "vp8_cuvid", "vp9", "vp9_rkmpp", "libvpx-vp9", "vp9_cuvid", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-08-19 02:48:11.938 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "libx264", "h264_nvenc", "h264_v4l2m2m", "h264_rkmpp", "libx265", "hevc_nvenc", "hevc_rkmpp", "mjpeg_rkmpp", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-08-19 02:48:11.945 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "hwupload_cuda", "overlay_opencl", "overlay_cuda", "overlay_rkrga", "scale_cuda", "scale_opencl", "scale_rkrga", "tonemapx", "tonemap_cuda", "tonemap_opencl", "transpose_cuda", "transpose_opencl", "vpp_rkrga", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-08-19 02:48:11.984 -04:00] [WRN] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vaapi" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 02:48:11.990 -04:00] [WRN] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vulkan" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 02:48:12.070 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "drm", "opencl", "rkmpp"]
+[2026-08-19 02:48:14.829 -04:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:48:14.830 -04:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:48:15.477 -04:00] [INF] [16] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 02:48:16.232 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-08-19 02:48:16.233 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: ServerId: "2ad17050fd4d4aa681d7eb28863d4641"
+[2026-08-19 02:48:16.233 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-08-19 02:48:16.233 -04:00] [INF] [9] Main: Startup complete 0:00:05.9983015
+[2026-08-19 02:48:20.103 -04:00] [INF] [16] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "user" has been denied (IP: "172.19.0.7").
+[2026-08-19 02:48:20.105 -04:00] [ERR] [16] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/AuthenticateByName".
+[2026-08-19 02:48:24.344 -04:00] [INF] [16] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "admin" has been denied (IP: "172.19.0.7").
+[2026-08-19 02:48:24.345 -04:00] [ERR] [16] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/AuthenticateByName".
+[2026-08-19 02:48:46.735 -04:00] [INF] [21] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has been denied (IP: "172.19.0.7").
+[2026-08-19 02:48:46.777 -04:00] [ERR] [21] Jellyfin.Api.Middleware.ExceptionMiddleware: Error processing request: "Invalid username or password entered". URL "POST" "/Users/AuthenticateByName".
+[2026-08-19 02:48:48.425 -04:00] [INF] [21] Jellyfin.Server.Implementations.Users.UserManager: Authentication request for "Peter" has succeeded.
+[2026-08-19 02:48:48.426 -04:00] [INF] [21] Emby.Server.Implementations.Session.SessionManager: Current/Max sessions for user "Peter": 0/0
+[2026-08-19 02:48:48.427 -04:00] [INF] [21] Emby.Server.Implementations.Session.SessionManager: Creating new access token for user 690febaf-9ccc-4321-ab5d-0b91ee18c420
+[2026-08-19 02:50:05.923 -04:00] [INF] [24] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 02:50:26.102 -04:00] [INF] [24] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:50:26.511 -04:00] [INF] [25] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:50:26.516 -04:00] [INF] [25] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"fd291d631bc173a94cffc373d2fbdcc8-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/fd291d631bc173a94cffc373d2fbdcc8%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/fd291d631bc173a94cffc373d2fbdcc8.m3u8\""
+[2026-08-19 02:50:29.574 -04:00] [INF] [26] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:50:30.955 -04:00] [INF] [25] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/fd291d631bc173a94cffc373d2fbdcc8.m3u8"
+[2026-08-19 02:50:32.545 -04:00] [INF] [16] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin Web" "10.11.11" playing "City of Brotherly Love". Stopped at "3944" ms
+[2026-08-19 02:50:40.007 -04:00] [INF] [3] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 02:50:40.322 -04:00] [INF] [24] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 02:50:40.322 -04:00] [INF] [24] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E03 - One Small Step [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:2 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"2c2c8662a0b26b5ba5b81b1461387031-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/2c2c8662a0b26b5ba5b81b1461387031%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/2c2c8662a0b26b5ba5b81b1461387031.m3u8\""
+[2026-08-19 02:50:42.906 -04:00] [INF] [25] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 02:50:48.193 -04:00] [INF] [23] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/2c2c8662a0b26b5ba5b81b1461387031.m3u8"
+[2026-08-19 02:50:49.791 -04:00] [INF] [23] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin Web" "10.11.11" playing "One Small Step". Stopped at "7220" ms
+[2026-08-19 02:54:15.314 -04:00] [INF] [29] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-08-19 02:54:15.320 -04:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 02:54:15.326 -04:00] [INF] [35] Main: Running query planner optimizations in the database... This might take a while
+[2026-08-19 02:54:15.357 -04:00] [INF] [27] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 02:54:15.360 -04:00] [INF] [35] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-08-19 02:54:15.360 -04:00] [INF] [35] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzArtistProvider"
+[2026-08-19 02:54:15.360 -04:00] [INF] [35] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2026-08-19 02:54:15.360 -04:00] [INF] [35] Emby.Server.Implementations.ApplicationHost: Disposing "PluginManager"
+[2026-08-19 03:06:36.618 -04:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:06:36.762 -04:00] [INF] [9] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "all interfaces"
+[2026-08-19 03:06:36.787 -04:00] [INF] [9] Main: Jellyfin version: "10.11.11"
+[2026-08-19 03:06:36.790 -04:00] [INF] [9] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_PublishedServerUrl, http://localhost:8096]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2026-08-19 03:06:36.791 -04:00] [INF] [9] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Operating system: "Ubuntu 26.04 LTS"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Architecture: Arm64
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: 64-Bit Process: True
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: User Interactive: True
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Processor count: 8
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Program data path: "/config/data"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Log directory path: "/config/log"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Config directory path: "/config"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Cache path: "/config/cache"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Temp directory path: "/tmp/jellyfin"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Web resources path: "/usr/share/jellyfin/web"
+[2026-08-19 03:06:36.792 -04:00] [INF] [9] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2026-08-19 03:06:36.804 -04:00] [INF] [9] Jellyfin.Server.Startup: Storage path `"/config/data/data"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:06:36.805 -04:00] [INF] [9] Jellyfin.Server.Startup: Storage path `"/config/cache"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:06:36.805 -04:00] [INF] [9] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:06:36.808 -04:00] [INF] [9] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:06:36.859 -04:00] [INF] [9] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 03:06:36.862 -04:00] [INF] [9] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 03:06:36.862 -04:00] [INF] [9] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 03:06:36.888 -04:00] [INF] [9] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-08-19 03:06:37.495 -04:00] [WRN] [13] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.33ms with message '"Server is still starting up."'
+[2026-08-19 03:06:37.584 -04:00] [INF] [9] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage PreInitialisation.
+[2026-08-19 03:06:37.594 -04:00] [INF] [9] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:06:37.611 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-08-19 03:06:37.639 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 03:06:37.640 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 03:06:37.640 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 03:06:37.640 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 03:06:37.641 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 03:06:37.641 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 03:06:37.641 -04:00] [INF] [9] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 03:06:37.705 -04:00] [INF] [9] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 03:06:37.705 -04:00] [INF] [9] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 03:06:37.705 -04:00] [INF] [9] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 03:06:37.708 -04:00] [INF] [9] Main: Prepare system for possible migrations
+[2026-08-19 03:06:37.720 -04:00] [INF] [9] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage CoreInitialisation.
+[2026-08-19 03:06:37.781 -04:00] [INF] [9] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.11.11.0"
+[2026-08-19 03:06:37.782 -04:00] [INF] [9] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.11.11.0"
+[2026-08-19 03:06:37.782 -04:00] [INF] [9] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.11.11.0"
+[2026-08-19 03:06:37.788 -04:00] [INF] [9] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.11.11.0"
+[2026-08-19 03:06:37.788 -04:00] [INF] [9] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.11.11.0"
+[2026-08-19 03:06:37.804 -04:00] [INF] [9] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage AppInitialisation.
+[2026-08-19 03:06:37.929 -04:00] [INF] [9] Main: Kestrel is listening on "all interfaces"
+[2026-08-19 03:06:38.268 -04:00] [WRN] [9] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/run/s6-rc:s6-rc-init:FoEECk/servicedirs/svc-jellyfin/wwwroot". Static files may be unavailable.
+[2026-08-19 03:06:38.283 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-08-19 03:06:38.284 -04:00] [INF] [10] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 03:06:38.287 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-08-20 03:00:00.000 -04:00, which is 23:53:21.7127858 from now.
+[2026-08-19 03:06:38.291 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-20 02:00:00.000 -04:00, which is 22:53:21.7088515 from now.
+[2026-08-19 03:06:38.401 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "7.1.4"
+[2026-08-19 03:06:38.416 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_rkmpp", "h264", "h264_rkmpp", "h264_cuvid", "hevc", "hevc_rkmpp", "hevc_cuvid", "mpeg1_rkmpp", "mpeg2video", "mpeg2_rkmpp", "mpeg2_cuvid", "mpeg4", "mpeg4_rkmpp", "mpeg4_cuvid", "msmpeg4", "vc1_cuvid", "vp8", "vp8_rkmpp", "libvpx", "vp8_cuvid", "vp9", "vp9_rkmpp", "libvpx-vp9", "vp9_cuvid", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-08-19 03:06:38.424 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "libx264", "h264_nvenc", "h264_v4l2m2m", "h264_rkmpp", "libx265", "hevc_nvenc", "hevc_rkmpp", "mjpeg_rkmpp", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-08-19 03:06:38.432 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "hwupload_cuda", "overlay_opencl", "overlay_cuda", "overlay_rkrga", "scale_cuda", "scale_opencl", "scale_rkrga", "tonemapx", "tonemap_cuda", "tonemap_opencl", "transpose_cuda", "transpose_opencl", "vpp_rkrga", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-08-19 03:06:38.461 -04:00] [WRN] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vaapi" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 03:06:38.466 -04:00] [WRN] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vulkan" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 03:06:38.516 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "drm", "opencl", "rkmpp"]
+[2026-08-19 03:06:41.300 -04:00] [INF] [21] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:06:41.301 -04:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:06:41.790 -04:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:06:43.600 -04:00] [INF] [9] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-08-19 03:06:43.601 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: ServerId: "2ad17050fd4d4aa681d7eb28863d4641"
+[2026-08-19 03:06:43.601 -04:00] [INF] [9] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-08-19 03:06:43.601 -04:00] [INF] [9] Main: Startup complete 0:00:07.1516101
+[2026-08-19 03:12:02.146 -04:00] [INF] [29] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:12:24.617 -04:00] [INF] [28] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 03:12:25.728 -04:00] [INF] [27] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 03:12:25.735 -04:00] [INF] [27] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E01 - City of Brotherly Love [AMZN][WEBDL-720p][EAC3 5.1][h264]-playWEB.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"edaa981994b56e0b60018af20bddf087-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/edaa981994b56e0b60018af20bddf087%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/edaa981994b56e0b60018af20bddf087.m3u8\""
+[2026-08-19 03:12:28.334 -04:00] [INF] [3] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 03:12:30.592 -04:00] [INF] [28] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/edaa981994b56e0b60018af20bddf087.m3u8"
+[2026-08-19 03:12:31.159 -04:00] [WRN] [30] Jellyfin.Api.Controllers.DynamicHlsController: cannot serve "/config/cache/transcodes/edaa981994b56e0b60018af20bddf0872.mp4" as it doesn't exist and no transcode is running
+[2026-08-19 03:12:32.177 -04:00] [INF] [28] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin iOS" "1.8.0" playing "City of Brotherly Love". Stopped at "1611" ms
+[2026-08-19 03:15:26.560 -04:00] [INF] [33] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 03:15:27.474 -04:00] [INF] [33] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 03:15:27.475 -04:00] [INF] [33] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E02 - Cage Fight [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"bbb24a5dda07e501c59c29db8ab613c0-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/bbb24a5dda07e501c59c29db8ab613c0%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/bbb24a5dda07e501c59c29db8ab613c0.m3u8\""
+[2026-08-19 03:15:29.951 -04:00] [INF] [34] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 03:15:36.628 -04:00] [INF] [33] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 03:15:37.005 -04:00] [INF] [30] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/bbb24a5dda07e501c59c29db8ab613c0.m3u8"
+[2026-08-19 03:15:37.855 -04:00] [INF] [33] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 03:15:37.856 -04:00] [INF] [33] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Reacher (2022) [tvdbid-366924]/Reacher (2022) - S04E02 - Cage Fight [WEBDL-720p][EAC3 5.1][h264]-WvF.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:2 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"c1014c9bf9ef89a334680a1575897712-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/c1014c9bf9ef89a334680a1575897712%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/c1014c9bf9ef89a334680a1575897712.m3u8\""
+[2026-08-19 03:15:39.695 -04:00] [INF] [28] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 03:16:07.692 -04:00] [INF] [28] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/c1014c9bf9ef89a334680a1575897712.m3u8"
+[2026-08-19 03:16:09.275 -04:00] [INF] [24] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin iOS" "1.8.0" playing "Cage Fight". Stopped at "29087" ms
+[2026-08-19 03:16:24.093 -04:00] [WRN] [30] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "172.19.0.1" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-08-19 03:16:24.101 -04:00] [INF] [30] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:19:59.336 -04:00] [INF] [26] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-08-19 03:20:17.385 -04:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:20:17.522 -04:00] [INF] [7] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "all interfaces"
+[2026-08-19 03:20:17.560 -04:00] [INF] [7] Main: Jellyfin version: "10.11.11"
+[2026-08-19 03:20:17.564 -04:00] [INF] [7] Main: Environment Variables: ["[JELLYFIN_PublishedServerUrl, http://localhost:8096]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Operating system: "Ubuntu 26.04 LTS"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Architecture: Arm64
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: 64-Bit Process: True
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: User Interactive: True
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Processor count: 8
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Program data path: "/config/data"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Log directory path: "/config/log"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Config directory path: "/config"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Cache path: "/config/cache"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Temp directory path: "/tmp/jellyfin"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Web resources path: "/usr/share/jellyfin/web"
+[2026-08-19 03:20:17.566 -04:00] [INF] [7] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2026-08-19 03:20:17.575 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data/data"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:20:17.576 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/cache"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:20:17.576 -04:00] [INF] [7] Jellyfin.Server.Startup: Storage path `"/config/data"` (Network) successfully checked with "32.9TiB" free which is over the minimum of "2GiB".
+[2026-08-19 03:20:17.578 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:20:17.627 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 03:20:17.634 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 03:20:17.634 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 03:20:17.647 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-08-19 03:20:18.179 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage PreInitialisation.
+[2026-08-19 03:20:18.185 -04:00] [INF] [7] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2026-08-19 03:20:18.195 -04:00] [WRN] [13] Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService: Health check "StartupCheck" with status Degraded completed after 0.6106ms with message '"Server is still starting up."'
+[2026-08-19 03:20:18.196 -04:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-08-19 03:20:18.212 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 03:20:18.212 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-08-19 03:20:18.215 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["::1/128", "fe80::/10", "fc00::/7", "127.0.0.1/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-08-19 03:20:18.215 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: []
+[2026-08-19 03:20:18.215 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["::"]
+[2026-08-19 03:20:18.215 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-08-19 03:20:18.215 -04:00] [INF] [7] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-08-19 03:20:18.251 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/data/jellyfin.db;Cache=Default;Default Timeout=30;Pooling=True"
+[2026-08-19 03:20:18.251 -04:00] [INF] [7] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-08-19 03:20:18.251 -04:00] [INF] [7] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-08-19 03:20:18.253 -04:00] [INF] [7] Main: Prepare system for possible migrations
+[2026-08-19 03:20:18.264 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage CoreInitialisation.
+[2026-08-19 03:20:18.327 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.11.11.0"
+[2026-08-19 03:20:18.327 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.11.11.0"
+[2026-08-19 03:20:18.327 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.11.11.0"
+[2026-08-19 03:20:18.333 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.11.11.0"
+[2026-08-19 03:20:18.333 -04:00] [INF] [7] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.11.11.0"
+[2026-08-19 03:20:18.360 -04:00] [INF] [7] Jellyfin.Server.Migrations.JellyfinMigrationService: There are 0 migrations for stage AppInitialisation.
+[2026-08-19 03:20:18.494 -04:00] [INF] [14] Main: Kestrel is listening on "all interfaces"
+[2026-08-19 03:20:18.807 -04:00] [WRN] [14] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/run/s6-rc:s6-rc-init:cpPFOc/servicedirs/svc-jellyfin/wwwroot". Static files may be unavailable.
+[2026-08-19 03:20:18.818 -04:00] [INF] [14] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-08-19 03:20:18.819 -04:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 03:20:18.822 -04:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-08-20 03:00:00.000 -04:00, which is 23:39:41.1773928 from now.
+[2026-08-19 03:20:18.826 -04:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-08-20 02:00:00.000 -04:00, which is 22:39:41.1731564 from now.
+[2026-08-19 03:20:18.840 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "7.1.4"
+[2026-08-19 03:20:18.853 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_rkmpp", "h264", "h264_rkmpp", "h264_cuvid", "hevc", "hevc_rkmpp", "hevc_cuvid", "mpeg1_rkmpp", "mpeg2video", "mpeg2_rkmpp", "mpeg2_cuvid", "mpeg4", "mpeg4_rkmpp", "mpeg4_cuvid", "msmpeg4", "vc1_cuvid", "vp8", "vp8_rkmpp", "libvpx", "vp8_cuvid", "vp9", "vp9_rkmpp", "libvpx-vp9", "vp9_cuvid", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-08-19 03:20:18.861 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "libx264", "h264_nvenc", "h264_v4l2m2m", "h264_rkmpp", "libx265", "hevc_nvenc", "hevc_rkmpp", "mjpeg_rkmpp", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-08-19 03:20:18.870 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "hwupload_cuda", "overlay_opencl", "overlay_cuda", "overlay_rkrga", "scale_cuda", "scale_opencl", "scale_rkrga", "tonemapx", "tonemap_cuda", "tonemap_opencl", "transpose_cuda", "transpose_opencl", "vpp_rkrga", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-08-19 03:20:18.905 -04:00] [WRN] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vaapi" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 03:20:18.911 -04:00] [WRN] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Filter: "overlay_vulkan" with option "Action to take when encountering EOF from secondary input" is not available
+[2026-08-19 03:20:18.968 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "drm", "opencl", "rkmpp"]
+[2026-08-19 03:20:21.834 -04:00] [INF] [13] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:20:21.834 -04:00] [INF] [9] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean up collections and playlists" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:20:22.464 -04:00] [INF] [22] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:20:23.355 -04:00] [INF] [14] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-08-19 03:20:23.355 -04:00] [INF] [14] Emby.Server.Implementations.ApplicationHost: ServerId: "2ad17050fd4d4aa681d7eb28863d4641"
+[2026-08-19 03:20:23.355 -04:00] [INF] [14] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-08-19 03:20:23.356 -04:00] [INF] [14] Main: Startup complete 0:00:06.144449
+[2026-08-19 03:22:03.595 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:24:18.482 -04:00] [INF] [41] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 03:24:18.484 -04:00] [INF] [41] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-08-19 03:24:18.714 -04:00] [WRN] [40] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 03:24:18.715 -04:00] [WRN] [40] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 03:24:18.748 -04:00] [WRN] [40] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 03:24:18.749 -04:00] [WRN] [40] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 03:24:18.867 -04:00] [INF] [36] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Season Unknown" entry for "Reacher"
+[2026-08-19 03:24:19.983 -04:00] [INF] [36] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season null in series "Reacher"
+[2026-08-19 03:24:19.983 -04:00] [INF] [36] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season Unknown", Path: "", Id: c69ca80e-2604-8625-475e-384beed7a8d5
+[2026-08-19 03:24:20.049 -04:00] [WRN] [36] Microsoft.EntityFrameworkCore.Query: Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+[2026-08-19 03:24:20.586 -04:00] [INF] [34] Emby.Server.Implementations.Library.Validators.GenresValidator: Deleting dead "Genre" "4936f5b1a6f84f0b0aa2657368a5b364" "Thriller"
+[2026-08-19 03:24:20.586 -04:00] [INF] [34] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Genre", Name: "Thriller", Path: "/config/data/metadata/Genre/Thriller", Id: 4936f5b1-a6f8-4f0b-0aa2-657368a5b364
+[2026-08-19 03:24:20.587 -04:00] [INF] [34] Emby.Server.Implementations.Library.LibraryManager: Deleting item path, Type: "Genre", Name: "Thriller", Path: "/config/data/metadata/Genre/Thriller", Id: 4936f5b1-a6f8-4f0b-0aa2-657368a5b364
+[2026-08-19 03:24:20.942 -04:00] [INF] [34] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 2 seconds
+[2026-08-19 03:24:20.943 -04:00] [INF] [36] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 03:24:26.438 -04:00] [INF] [34] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 03:24:26.439 -04:00] [INF] [34] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-08-19 03:24:26.461 -04:00] [WRN] [41] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 03:24:26.462 -04:00] [WRN] [41] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 03:24:26.474 -04:00] [WRN] [34] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/movies" is inaccessible or empty, skipping
+[2026-08-19 03:24:26.475 -04:00] [WRN] [34] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/data/playlists" is inaccessible or empty, skipping
+[2026-08-19 03:24:26.508 -04:00] [INF] [40] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 0 seconds
+[2026-08-19 03:24:26.508 -04:00] [INF] [36] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/media/tv"
+[2026-08-19 03:24:57.008 -04:00] [INF] [40] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:24:57.197 -04:00] [INF] [18] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:24:58.427 -04:00] [INF] [36] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:24:58.635 -04:00] [INF] [18] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:25:15.125 -04:00] [INF] [36] MediaBrowser.Providers.TV.SeriesMetadataService: Creating Season "Season Unknown" entry for "Inside Job"
+[2026-08-19 03:25:16.165 -04:00] [INF] [18] MediaBrowser.Providers.TV.SeriesMetadataService: Removing virtual season null in series "Inside Job"
+[2026-08-19 03:25:16.166 -04:00] [INF] [18] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Season", Name: "Season Unknown", Path: "", Id: 744a1f8e-6363-4ad8-c376-722e44ac3d42
+[2026-08-19 03:25:28.455 -04:00] [INF] [24] Jellyfin.Api.Helpers.MediaInfoHelper: User policy for "Peter". EnablePlaybackRemuxing: True EnableVideoPlaybackTranscoding: True EnableAudioPlaybackTranscoding: True
+[2026-08-19 03:25:29.182 -04:00] [INF] [24] Jellyfin.Api.Controllers.DynamicHlsController: Current HLS implementation doesn't support non-keyframe breaks but one is requested, ignoring that request
+[2026-08-19 03:25:29.188 -04:00] [INF] [24] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-analyzeduration 200M -probesize 1G -fflags +genpts  -i file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type fmp4 -hls_fmp4_init_filename \"4b2a35d9109cc3c761a5c4dccb3eeac0-1.mp4\" -start_number 0 -hls_segment_filename \"/config/cache/transcodes/4b2a35d9109cc3c761a5c4dccb3eeac0%d.mp4\" -hls_playlist_type vod -hls_list_size 0 -hls_segment_options movflags=+frag_discont -y \"/config/cache/transcodes/4b2a35d9109cc3c761a5c4dccb3eeac0.m3u8\""
+[2026-08-19 03:25:31.774 -04:00] [INF] [22] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: FFmpeg exited with code 0
+[2026-08-19 03:25:43.764 -04:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: "Inside Job" ("/data/media/tv/Inside Job (2021) [tvdbid-365098]") will be refreshed.
+[2026-08-19 03:25:43.765 -04:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: "Season 1" ("/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01") will be refreshed.
+[2026-08-19 03:25:43.766 -04:00] [INF] [18] Emby.Server.Implementations.IO.LibraryMonitor: "Unpresidented" ("/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv") will be refreshed.
+[2026-08-19 03:26:04.102 -04:00] [INF] [24] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: "/usr/lib/jellyfin-ffmpeg/ffmpeg" "-i file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\" -map 0:2 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/2.srt\" -map 0:3 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/3.srt\" -map 0:4 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/4.srt\" -map 0:5 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/5.srt\" -map 0:6 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/6.srt\" -map 0:7 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/7.srt\" -map 0:8 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/8.srt\" -map 0:9 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/9.srt\" -map 0:10 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/10.srt\" -map 0:11 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/11.srt\" -map 0:12 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/12.srt\" -map 0:13 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/13.srt\" -map 0:14 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/14.srt\" -map 0:15 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/15.srt\" -map 0:16 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/16.srt\" -map 0:17 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/17.srt\" -map 0:18 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/18.srt\" -map 0:19 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/19.srt\" -map 0:20 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/20.srt\" -map 0:21 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/21.srt\" -map 0:22 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/22.srt\" -map 0:23 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/23.srt\" -map 0:24 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/24.srt\" -map 0:25 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/25.srt\" -map 0:26 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/26.srt\" -map 0:27 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/27.srt\" -map 0:28 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/28.srt\" -map 0:29 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/29.srt\" -map 0:30 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/30.srt\" -map 0:31 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/31.srt\" -map 0:32 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/32.srt\" -map 0:33 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/33.srt\" -map 0:34 -an -vn -c:s copy -flush_packets 1 \"/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/34.srt\""
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/2.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/3.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/4.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/5.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/6.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/7.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/8.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/9.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/10.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/11.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/12.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/13.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/14.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/15.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/16.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/17.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/18.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/19.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/20.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/21.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/22.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/23.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/24.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/25.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/26.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/27.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/28.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/29.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/30.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/31.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/32.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/33.srt"
+[2026-08-19 03:26:04.466 -04:00] [INF] [18] MediaBrowser.MediaEncoding.Subtitles.SubtitleEncoder: ffmpeg subtitle extraction completed for "file:\"/data/media/tv/Inside Job (2021) [tvdbid-365098]/Season 01/Inside Job (2021) - S01E01 - Unpresidented [NF][WEBDL-1080p][EAC3 5.1][x264]-FLUX.mkv\"" to "/config/data/data/subtitles/f5/f5c79984-077a-bc66-cb38-45fe0c9adaf0/34.srt"
+[2026-08-19 03:53:07.684 -04:00] [INF] [13] MediaBrowser.MediaEncoding.Transcoding.TranscodeManager: Deleting partial stream file(s) "/config/cache/transcodes/4b2a35d9109cc3c761a5c4dccb3eeac0.m3u8"
+[2026-08-19 03:53:09.286 -04:00] [INF] [21] Emby.Server.Implementations.Session.SessionManager: Playback stopped reported by app "Jellyfin Web" "10.11.11" playing "Unpresidented". Stopped at "1761814" ms
+[2026-08-19 03:54:19.828 -04:00] [INF] [22] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Series", Name: "Inside Job", Path: "/data/media/tv/Inside Job (2021) [tvdbid-365098]", Id: ff781519-67d1-f4f3-7259-300b05fc0d64
+[2026-08-19 03:54:19.838 -04:00] [INF] [22] Emby.Server.Implementations.Library.LibraryManager: Deleting item path, Type: "Series", Name: "Inside Job", Path: "/data/media/tv/Inside Job (2021) [tvdbid-365098]", Id: ff781519-67d1-f4f3-7259-300b05fc0d64
+[2026-08-19 03:54:23.669 -04:00] [INF] [18] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:54:23.950 -04:00] [INF] [22] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:54:29.278 -04:00] [INF] [18] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Series", Name: "Reacher", Path: "/data/media/tv/Reacher (2022) [tvdbid-366924]", Id: 69e7a247-0d07-caca-08a4-6a112934d77f
+[2026-08-19 03:54:29.293 -04:00] [INF] [18] Emby.Server.Implementations.Library.LibraryManager: Deleting item path, Type: "Series", Name: "Reacher", Path: "/data/media/tv/Reacher (2022) [tvdbid-366924]", Id: 69e7a247-0d07-caca-08a4-6a112934d77f
+[2026-08-19 03:55:29.303 -04:00] [INF] [22] Emby.Server.Implementations.IO.LibraryMonitor: "tv" ("/data/media/tv") will be refreshed.
+[2026-08-19 03:55:29.303 -04:00] [INF] [14] Emby.Server.Implementations.IO.LibraryMonitor: "tv" ("/data/media/tv") will be refreshed.
+[2026-08-19 03:55:29.317 -04:00] [WRN] [38] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 03:55:29.335 -04:00] [WRN] [38] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 03:56:40.596 -04:00] [WRN] [34] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 03:58:30.898 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:58:33.651 -04:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:58:34.341 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:58:40.986 -04:00] [WRN] [14] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "172.19.0.1" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-08-19 03:58:40.989 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:59:16.621 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:59:17.743 -04:00] [INF] [41] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 03:59:18.401 -04:00] [INF] [35] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" request
+[2026-08-19 03:59:34.177 -04:00] [WRN] [14] MediaBrowser.Controller.Entities.BaseItem: Library folder "/data/media/tv" is inaccessible or empty, skipping
+[2026-08-19 03:59:35.974 -04:00] [INF] [14] Emby.Server.Implementations.Session.SessionWebSocketListener: Sending ForceKeepAlive message to 1 inactive WebSockets.
+[2026-08-19 03:59:50.103 -04:00] [WRN] [14] Emby.Server.Implementations.HttpServer.WebSocketConnection: WS "172.19.0.1" error receiving data: "The remote party closed the WebSocket connection without completing the close handshake."
+[2026-08-19 03:59:50.106 -04:00] [INF] [14] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 04:02:58.082 -04:00] [INF] [47] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-08-19 04:02:58.087 -04:00] [INF] [41] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "::ffff:172.19.0.1" closed
+[2026-08-19 04:02:58.093 -04:00] [INF] [49] Main: Running query planner optimizations in the database... This might take a while
+[2026-08-19 04:02:58.114 -04:00] [INF] [50] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/media/tv"
+[2026-08-19 04:02:58.117 -04:00] [INF] [49] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-08-19 04:02:58.117 -04:00] [INF] [49] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzArtistProvider"
+[2026-08-19 04:02:58.117 -04:00] [INF] [49] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2026-08-19 04:02:58.117 -04:00] [INF] [49] Emby.Server.Implementations.ApplicationHost: Disposing "PluginManager"

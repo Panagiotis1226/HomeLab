@@ -1,0 +1,92 @@
+[01:24:18 DBG] Recyclarr Version: 7.5.2+Branch.master.Sha.bcf6b1da2314922f0d2e244f86ddbfacce7ecb2e
+[01:24:18 DBG] App Data Dir: /config
+[01:24:18 DBG] Recyclarr Version: 7.5.2+Branch.master.Sha.bcf6b1da2314922f0d2e244f86ddbfacce7ecb2e
+[01:24:18 DBG] App Data Dir: /config
+[01:24:18 DBG] Console Output Settings {"RawOption":null,"NoColor":false,"IsTerminal":false}
+[01:24:18 DBG] Initializing provider: official (type: trash-guides)
+[01:24:18 DBG] Using Reference & Clone URL: master, https://github.com/TRaSH-Guides/Guides.git
+[01:24:18 DBG] Cloning repository to /config/cache/resources/trash-guides/git/official
+[01:24:18 DBG] Executing git command with args: ["clone","https://github.com/TRaSH-Guides/Guides.git","."]
+[01:24:18 DBG] Using working directory: /config/cache/resources/trash-guides/git/official
+[01:25:07 DBG] Command Output: 
+[01:25:07 DBG] Executing git command with args: ["remote","set-url","origin","https://github.com/TRaSH-Guides/Guides.git"]
+[01:25:07 DBG] Using working directory: /config/cache/resources/trash-guides/git/official
+[01:25:07 DBG] Command Output: 
+[01:25:07 DBG] Remote 'origin' set to https://github.com/TRaSH-Guides/Guides.git
+[01:25:07 DBG] Executing git command with args: ["checkout","-f","master"]
+[01:25:07 DBG] Using working directory: /config/cache/resources/trash-guides/git/official
+[01:25:07 DBG] Command Output: Your branch is up to date with 'origin/master'.
+[01:25:07 DBG] Executing git command with args: ["fetch","origin"]
+[01:25:07 DBG] Using working directory: /config/cache/resources/trash-guides/git/official
+[01:25:07 DBG] Command Output: 
+[01:25:07 DBG] Executing git command with args: ["reset","--hard","origin/master"]
+[01:25:07 DBG] Using working directory: /config/cache/resources/trash-guides/git/official
+[01:25:08 DBG] Command Output: HEAD is now at 1d7937b5 feat(starr): Add RlsGrp `3L` to the `TrueHD Atmos` Custom Format (#2857)
+[01:25:08 DBG] MapResourcePaths called for provider official at /config/cache/resources/trash-guides/git/official
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/radarr/cf (Exists: True)
+[01:25:08 DBG] Provider official: Found 241 files in docs/json/radarr/cf
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/radarr/quality-size (Exists: True)
+[01:25:08 DBG] Provider official: Found 4 files in docs/json/radarr/quality-size
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/radarr/naming (Exists: True)
+[01:25:08 DBG] Provider official: Found 1 files in docs/json/radarr/naming
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/sonarr/cf (Exists: True)
+[01:25:08 DBG] Provider official: Found 235 files in docs/json/sonarr/cf
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/sonarr/quality-size (Exists: True)
+[01:25:08 DBG] Provider official: Found 2 files in docs/json/sonarr/quality-size
+[01:25:08 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:25:08 DBG] Provider official: Checking docs/json/sonarr/naming (Exists: True)
+[01:25:08 DBG] Provider official: Found 1 files in docs/json/sonarr/naming
+[01:25:08 DBG] Initializing provider: official (type: config-templates)
+[01:25:08 DBG] Using Reference & Clone URL: master, https://github.com/recyclarr/config-templates.git
+[01:25:08 DBG] Cloning repository to /config/cache/resources/config-templates/git/official
+[01:25:08 DBG] Executing git command with args: ["clone","https://github.com/recyclarr/config-templates.git","."]
+[01:25:08 DBG] Using working directory: /config/cache/resources/config-templates/git/official
+[01:25:09 DBG] Command Output: 
+[01:25:09 DBG] Executing git command with args: ["remote","set-url","origin","https://github.com/recyclarr/config-templates.git"]
+[01:25:09 DBG] Using working directory: /config/cache/resources/config-templates/git/official
+[01:25:09 DBG] Command Output: 
+[01:25:09 DBG] Remote 'origin' set to https://github.com/recyclarr/config-templates.git
+[01:25:09 DBG] Executing git command with args: ["checkout","-f","master"]
+[01:25:09 DBG] Using working directory: /config/cache/resources/config-templates/git/official
+[01:25:09 DBG] Command Output: Your branch is up to date with 'origin/master'.
+[01:25:09 DBG] Executing git command with args: ["fetch","origin"]
+[01:25:09 DBG] Using working directory: /config/cache/resources/config-templates/git/official
+[01:25:10 DBG] Command Output: 
+[01:25:10 DBG] Executing git command with args: ["reset","--hard","origin/master"]
+[01:25:10 DBG] Using working directory: /config/cache/resources/config-templates/git/official
+[01:25:10 DBG] Command Output: HEAD is now at 9faf65f chore: align guidance with current template architecture
+[01:25:10 DBG] recyclarr.yml: Loading config file: /config/recyclarr.yml
+[01:25:10 DBG] recyclarr.yml: ConfigIncludes: Querying Radarr config includes
+[01:25:10 DBG] recyclarr.yml: ConfigIncludes: Found 0 Radarr includes in registry
+[01:25:10 DBG] recyclarr.yml: ConfigIncludes: Retrieved 0 unique Radarr includes
+[01:25:10 ERR] Exiting due to fatal error: For service type 'Radarr', unable to find config include with name 'radarr-quality-definition-movie'
+   at Recyclarr.Config.Parsing.PostProcessing.ConfigMerging.TemplateIncludeProcessor.GetPathToConfig(IYamlInclude includeDirective, SupportedServices serviceType) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/ConfigMerging/TemplateIncludeProcessor.cs:line 33
+   at Recyclarr.Config.Parsing.PostProcessing.ConfigMerging.YamlIncludeResolver.GetIncludePath(IYamlInclude includeDirective, SupportedServices serviceType) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/ConfigMerging/YamlIncludeResolver.cs:line 17
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.LoadYamlInclude[T](IYamlInclude includeDirective, SupportedServices serviceType) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 101
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.<>c__DisplayClass9_0`1.<ProcessIncludes>b__0(IYamlInclude x) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 76
+   at System.Linq.Enumerable.ListSelectIterator`2.MoveNext()
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.ProcessIncludes[T](IReadOnlyDictionary`2 configs, ServiceConfigMerger`1 merger, SupportedServices serviceType) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 73
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.Process(RootConfigYaml config) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 28
+   at Recyclarr.Config.Parsing.ConfigurationLoader.<>c.<ProcessLoadedConfigs>b__7_0(RootConfigYaml current, IConfigPostProcessor processor) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 51
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   at Recyclarr.Config.Parsing.ConfigurationLoader.ProcessLoadedConfigs(RootConfigYaml config) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 49
+   at Recyclarr.Config.Parsing.ConfigurationLoader.Load(IFileInfo file) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 27
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at System.Linq.Enumerable.IEnumerableWhereIterator`1.ToList()
+   at Recyclarr.Config.ConfigurationRegistry.LoadAndFilterConfigs(IEnumerable`1 configs, ConfigFilterCriteria filterCriteria) in /source/src/Recyclarr.Core/Config/ConfigurationRegistry.cs:line 50
+   at Recyclarr.Config.ConfigurationRegistry.FindAndLoadConfigs(ConfigFilterCriteria filterCriteria) in /source/src/Recyclarr.Core/Config/ConfigurationRegistry.cs:line 30
+   at Recyclarr.Cli.Processors.Sync.SyncProcessor.ProcessConfigs(ISyncSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Processors/Sync/SyncProcessor.cs:line 42
+   at Recyclarr.Cli.Processors.Sync.SyncProcessor.ProcessConfigs(ISyncSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Processors/Sync/SyncProcessor.cs:line 58
+   at Recyclarr.Cli.Processors.Sync.SyncProcessor.Process(ISyncSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Processors/Sync/SyncProcessor.cs:line 32
+   at Recyclarr.Cli.Console.Commands.SyncCommand.ExecuteAsync(CommandContext context, CliSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Console/Commands/SyncCommand.cs:line 70
+   at Spectre.Console.Cli.CommandExecutor.ExecuteAsync(CommandTree leaf, CommandTree tree, CommandContext context, ITypeResolver resolver, IConfiguration configuration, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/Internal/CommandExecutor.cs:line 260
+   at Spectre.Console.Cli.CommandExecutor.ExecuteAsync(IConfiguration configuration, IEnumerable`1 args, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/Internal/CommandExecutor.cs:line 128
+   at Spectre.Console.Cli.CommandApp.RunAsync(IEnumerable`1 args, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/CommandApp.cs:line 77
+   at Recyclarr.Cli.Console.CliSetup.Run(ILifetimeScope scope, IEnumerable`1 args) in /source/src/Recyclarr.Cli/Console/CliSetup.cs:line 82
+   at Recyclarr.Cli.Program.Main(String[] args) in /source/src/Recyclarr.Cli/Program.cs:line 24

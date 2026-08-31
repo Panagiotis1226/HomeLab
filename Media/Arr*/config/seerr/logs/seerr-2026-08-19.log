@@ -1,0 +1,81 @@
+2026-08-19T06:48:10.951Z [info]: Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c 
+2026-08-19T06:48:11.097Z [info]: Starting Seerr version 3.4.1 
+2026-08-19T06:48:11.868Z [info][Notifications]: Registered notification agents 
+2026-08-19T06:48:11.880Z [info][Jobs]: Scheduled jobs loaded 
+2026-08-19T06:48:11.932Z [info][Server]: Server ready on port 5055 
+2026-08-19T06:48:20.106Z [warn][Auth]: Failed sign-in attempt from user with incorrect Jellyfin credentials {"account":{"ip":"::ffff:172.19.0.1","email":"user","password":"__REDACTED__"}}
+2026-08-19T06:48:24.348Z [warn][Auth]: Failed sign-in attempt from user with incorrect Jellyfin credentials {"account":{"ip":"::ffff:172.19.0.1","email":"admin","password":"__REDACTED__"}}
+2026-08-19T06:48:37.538Z [warn][API]: Failed sign-in attempt using invalid Seerr password {"ip":"::ffff:172.19.0.1","email":"blueguin02@gmail.com","userId":1}
+2026-08-19T06:48:38.958Z [warn][API]: Failed sign-in attempt using invalid Seerr password {"ip":"::ffff:172.19.0.1","email":"blueguin02@gmail.com","userId":1}
+2026-08-19T06:48:46.778Z [warn][Auth]: Failed sign-in attempt from user with incorrect Jellyfin credentials {"account":{"ip":"::ffff:172.19.0.1","email":"Peter","password":"__REDACTED__"}}
+2026-08-19T06:48:48.554Z [info][API]: Found matching Jellyfin user; updating user with Jellyfin {"ip":"::ffff:172.19.0.1","jellyfinUsername":"Peter"}
+2026-08-19T06:48:53.211Z [info]: Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c 
+2026-08-19T06:48:53.377Z [info]: Starting Seerr version 3.4.1 
+2026-08-19T06:48:54.046Z [info][Notifications]: Registered notification agents 
+2026-08-19T06:48:54.057Z [info][Jobs]: Scheduled jobs loaded 
+2026-08-19T06:48:54.097Z [info][Server]: Server ready on port 5055 
+2026-08-19T06:50:00.013Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:50:00.015Z [info][Jellyfin Sync]: Scan starting {"sessionId":"d930f4f4-a3ad-47ee-af25-5cd7d7d0e8c0"}
+2026-08-19T06:50:00.021Z [info][Anime-List Sync]: Downloading latest mapping file 
+2026-08-19T06:50:00.310Z [info][Anime-List Sync]: Loading mapping file 
+2026-08-19T06:50:00.434Z [info][Anime-List Sync]: Loaded 10724 AniDB items from mapping file 
+2026-08-19T06:50:00.434Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:50:00.552Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:06:38.280Z [info]: Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c 
+2026-08-19T07:06:38.548Z [info]: Starting Seerr version 3.4.1 
+2026-08-19T07:06:40.169Z [info][Notifications]: Registered notification agents 
+2026-08-19T07:06:40.184Z [info][Jobs]: Scheduled jobs loaded 
+2026-08-19T07:06:40.229Z [info][Server]: Server ready on port 5055 
+2026-08-19T07:10:00.033Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:10:00.035Z [info][Jellyfin Sync]: Scan starting {"sessionId":"ed62ffb5-9672-4e06-bffa-336d7e44ff8c"}
+2026-08-19T07:10:00.044Z [info][Anime-List Sync]: Loading mapping file 
+2026-08-19T07:10:00.161Z [info][Anime-List Sync]: Loaded 10724 AniDB items from mapping file 
+2026-08-19T07:10:00.162Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:10:00.282Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:15:00.017Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:15:00.019Z [info][Jellyfin Sync]: Scan starting {"sessionId":"3b165398-0cae-4786-bffd-c56897b0fcea"}
+2026-08-19T07:15:00.024Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:15:00.054Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:20:18.065Z [info]: Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c 
+2026-08-19T07:20:18.213Z [info]: Starting Seerr version 3.4.1 
+2026-08-19T07:20:18.813Z [info][Notifications]: Registered notification agents 
+2026-08-19T07:20:18.823Z [info][Jobs]: Scheduled jobs loaded 
+2026-08-19T07:20:18.863Z [info][Server]: Server ready on port 5055 
+2026-08-19T07:25:00.034Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:25:00.037Z [info][Jellyfin Sync]: Scan starting {"sessionId":"895eecf4-8bc3-46cc-8edb-f56f52ec4437"}
+2026-08-19T07:25:00.046Z [info][Anime-List Sync]: Loading mapping file 
+2026-08-19T07:25:00.190Z [info][Anime-List Sync]: Loaded 10724 AniDB items from mapping file 
+2026-08-19T07:25:00.191Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:25:00.211Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:30:00.021Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:30:00.023Z [info][Jellyfin Sync]: Scan starting {"sessionId":"55fe8c70-f742-403a-9368-f3c4716d1c38"}
+2026-08-19T07:30:00.033Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:30:00.060Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:35:00.020Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:35:00.021Z [info][Jellyfin Sync]: Scan starting {"sessionId":"242f03cc-8563-477e-a058-ea3f09c3b732"}
+2026-08-19T07:35:00.027Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:35:00.054Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:40:00.018Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:40:00.019Z [info][Jellyfin Sync]: Scan starting {"sessionId":"454f75dc-66fc-4d59-b9ac-688613afaa24"}
+2026-08-19T07:40:00.024Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:40:00.054Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:45:00.023Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:45:00.024Z [info][Jellyfin Sync]: Scan starting {"sessionId":"7f26fb55-095c-43ee-af57-ac7dddf73f72"}
+2026-08-19T07:45:00.029Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:45:00.062Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:50:00.029Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:50:00.030Z [info][Jellyfin Sync]: Scan starting {"sessionId":"e8dbf494-e356-44aa-9a75-1d5c6a77bb14"}
+2026-08-19T07:50:00.038Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:50:00.068Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T07:55:00.019Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T07:55:00.024Z [info][Jellyfin Sync]: Scan starting {"sessionId":"94ae1584-4799-46a7-a259-b4530ce3cfdc"}
+2026-08-19T07:55:00.039Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T07:55:00.071Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T08:00:00.013Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T08:00:00.014Z [info][Jellyfin Sync]: Scan starting {"sessionId":"0d44ea51-b70b-47d7-b4a4-b2db11b484b4"}
+2026-08-19T08:00:00.021Z [info][Jobs]: Starting scheduled job: Radarr Scan 
+2026-08-19T08:00:00.022Z [info][Radarr Scan]: Scan starting {"sessionId":"ee23af1f-363c-4dae-b035-c9a2188f4a7a"}
+2026-08-19T08:00:00.023Z [info][Radarr Scan]: Skipping orphaned movie cleanup: no standard Radarr servers were scanned. 
+2026-08-19T08:00:00.023Z [info][Radarr Scan]: Radarr scan complete 
+2026-08-19T08:00:00.028Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T08:00:00.054Z [info][Jellyfin Sync]: Recently Added Scan Complete 

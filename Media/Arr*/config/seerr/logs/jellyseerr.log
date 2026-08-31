@@ -1,0 +1,70 @@
+2026-08-19T05:03:23.678Z [info][Notifications]: Registered notification agents 
+2026-08-19T05:03:23.682Z [info][Server]: Skipping starting the scheduled jobs as we have no Plex/Jellyfin/Emby servers setup yet 
+2026-08-19T05:03:23.683Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":1,"enabled":true,"isBuiltIn":true,"order":0}}
+2026-08-19T05:03:23.696Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":2,"enabled":true,"isBuiltIn":true,"order":1}}
+2026-08-19T05:03:23.702Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":3,"enabled":true,"isBuiltIn":true,"order":2}}
+2026-08-19T05:03:23.707Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":4,"enabled":true,"isBuiltIn":true,"order":3}}
+2026-08-19T05:03:23.714Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":5,"enabled":true,"isBuiltIn":true,"order":4}}
+2026-08-19T05:03:23.718Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":6,"enabled":true,"isBuiltIn":true,"order":5}}
+2026-08-19T05:03:23.721Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":7,"enabled":true,"isBuiltIn":true,"order":6}}
+2026-08-19T05:03:23.727Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":8,"enabled":true,"isBuiltIn":true,"order":7}}
+2026-08-19T05:03:23.731Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":9,"enabled":true,"isBuiltIn":true,"order":8}}
+2026-08-19T05:03:23.736Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":10,"enabled":true,"isBuiltIn":true,"order":9}}
+2026-08-19T05:03:23.741Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":11,"enabled":true,"isBuiltIn":true,"order":10}}
+2026-08-19T05:03:23.748Z [info][Discover Slider]: Creating built-in discovery slider {"slider":{"type":12,"enabled":true,"isBuiltIn":true,"order":11}}
+2026-08-19T05:03:23.828Z [info][Server]: Server ready on port 5055 
+2026-08-19T05:56:40.181Z [info]: Commit Tag: $GIT_SHA 
+2026-08-19T05:56:40.377Z [info]: Starting Jellyseerr version 2.7.3 
+2026-08-19T05:56:40.703Z [info][Notifications]: Registered notification agents 
+2026-08-19T05:56:40.705Z [info][Server]: Skipping starting the scheduled jobs as we have no Plex/Jellyfin/Emby servers setup yet 
+2026-08-19T05:56:40.755Z [info][Server]: Server ready on port 5055 
+2026-08-19T06:05:02.768Z [error][Auth]: The provided Emby is invalid or the server is not reachable. {"error":"INVALID_URL","status":404,"hostname":"http://http://jellyfin:8096"}
+2026-08-19T06:05:52.445Z [warn][Auth]: Failed login attempt from user with incorrect Jellyfin credentials {"account":{"ip":"::ffff:172.19.0.1","email":"admin","password":"__REDACTED__"}}
+2026-08-19T06:06:07.747Z [warn][Auth]: Failed login attempt from user with incorrect Jellyfin credentials {"account":{"ip":"::ffff:172.19.0.1","email":"admin","password":"__REDACTED__"}}
+2026-08-19T06:06:32.802Z [info][API]: Sign-in attempt from Jellyfin user with access to the media server; creating initial admin user for Jellyseerr {"ip":"::ffff:172.19.0.1","jellyfinUsername":"Peter"}
+2026-08-19T06:06:32.840Z [info][Jobs]: Scheduled jobs loaded 
+2026-08-19T06:07:42.890Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"3ea134e0-f8a6-494e-9a24-ba7e4d1ec77e"}
+2026-08-19T06:07:42.895Z [info][Jellyfin Sync]: Full Scan Complete 
+2026-08-19T06:07:47.613Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"7102d6b1-3634-4de6-b1c9-64492f64c46a"}
+2026-08-19T06:07:47.621Z [info][Jellyfin Sync]: Beginning to process library: Movies 
+2026-08-19T06:07:47.665Z [info][Jellyfin Sync]: Full Scan Complete 
+2026-08-19T06:10:00.010Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:10:00.012Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"9105bc9a-7329-478f-926b-be84ba2ec9bb"}
+2026-08-19T06:10:00.017Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:10:00.054Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:11:41.099Z [error][Radarr]: [Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878 
+2026-08-19T06:11:44.542Z [error][Radarr]: [Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878 
+2026-08-19T06:11:45.071Z [error][Radarr]: [Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878 
+2026-08-19T06:12:12.596Z [error][Radarr]: [Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878 
+2026-08-19T06:15:00.020Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:15:00.022Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"9b2954f0-ce5f-48c5-b41a-1d1e6af49351"}
+2026-08-19T06:15:00.028Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:15:00.078Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:17:42.764Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Inside Job (2021)"}
+2026-08-19T06:17:42.771Z [info][Media Request]: Request has an override quality profile ID: 3 {"requestId":1,"mediaId":1}
+2026-08-19T06:17:42.771Z [info][Media Request]: Sent request to Sonarr {"requestId":1,"mediaId":1}
+2026-08-19T06:17:44.203Z [info][Sonarr]: Sonarr accepted request 
+2026-08-19T06:20:00.037Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:20:00.038Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"716b56e0-54eb-4905-a8ba-84a569497ab2"}
+2026-08-19T06:20:00.044Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:20:00.073Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:25:00.032Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:25:00.034Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"2aad9902-6240-4bbb-a932-e09c9e8221b5"}
+2026-08-19T06:25:00.039Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:25:04.083Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:28:43.981Z [info][Notifications]: Sending notification(s) for MEDIA_AUTO_APPROVED {"subject":"Reacher (2022)"}
+2026-08-19T06:28:43.990Z [info][Media Request]: Request has an override quality profile ID: 3 {"requestId":2,"mediaId":3}
+2026-08-19T06:28:43.991Z [info][Media Request]: Sent request to Sonarr {"requestId":2,"mediaId":3}
+2026-08-19T06:28:44.345Z [info][Sonarr]: Sonarr accepted request 
+2026-08-19T06:30:00.031Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:30:00.032Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"9d4d5127-89d4-4452-9007-05c9c7a5a676"}
+2026-08-19T06:30:00.038Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:30:04.062Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:35:00.050Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:35:00.053Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"8c831402-956d-4540-a629-d3b409573238"}
+2026-08-19T06:35:00.065Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:35:00.095Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2026-08-19T06:40:00.024Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Scan 
+2026-08-19T06:40:00.026Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"fa3b09b1-72a5-4903-b0e9-8caf1230fac8"}
+2026-08-19T06:40:00.035Z [info][Jellyfin Sync]: Beginning to process recently added for library: Movies 
+2026-08-19T06:40:00.068Z [info][Jellyfin Sync]: Recently Added Scan Complete 

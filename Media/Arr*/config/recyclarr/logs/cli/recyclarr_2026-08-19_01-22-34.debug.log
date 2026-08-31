@@ -1,0 +1,87 @@
+[01:22:34 DBG] Recyclarr Version: 8.7.1+Branch.-no-branch-.Sha.01e2b68f229e97db3bc383e2a47c3cab99db83fb
+[01:22:34 DBG] App Data Dir: /config
+[01:22:34 INF] Initializing provider: official (type: trash-guides)
+[01:22:34 DBG] Using URL: https://github.com/TRaSH-Guides/Guides.git, Refs: ["master","main"]
+[01:22:34 DBG] Initializing new repository at /config/resources/trash-guides/git/official
+[01:22:34 DBG] Executing git command with args: ["init"]
+[01:22:34 DBG] Command Output: Initialized empty Git repository in /config/resources/trash-guides/git/official/.git/
+[01:22:34 DBG] Attempting to fetch reference: master
+[01:22:34 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/TRaSH-Guides/Guides.git","master"]
+[01:22:58 DBG] Command Output: 
+[01:22:58 DBG] Successfully fetched reference: master
+[01:22:58 DBG] Executing git command with args: ["reset","--hard","FETCH_HEAD"]
+[01:22:59 DBG] Command Output: HEAD is now at 1d7937b feat(starr): Add RlsGrp `3L` to the `TrueHD Atmos` Custom Format (#2857)
+[01:22:59 DBG] MapResourcePaths called for provider official at /config/resources/trash-guides/git/official
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/cf (Exists: True)
+[01:22:59 DBG] Provider official: Found 241 files in docs/json/radarr/cf
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/quality-size (Exists: True)
+[01:22:59 DBG] Provider official: Found 4 files in docs/json/radarr/quality-size
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/naming (Exists: True)
+[01:22:59 DBG] Provider official: Found 1 files in docs/json/radarr/naming
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/cf (Exists: True)
+[01:22:59 DBG] Provider official: Found 235 files in docs/json/sonarr/cf
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/quality-size (Exists: True)
+[01:22:59 DBG] Provider official: Found 2 files in docs/json/sonarr/quality-size
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/naming (Exists: True)
+[01:22:59 DBG] Provider official: Found 1 files in docs/json/sonarr/naming
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/cf-groups (Exists: True)
+[01:22:59 DBG] Provider official: Found 40 files in docs/json/radarr/cf-groups
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/cf-groups (Exists: True)
+[01:22:59 DBG] Provider official: Found 38 files in docs/json/sonarr/cf-groups
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/quality-profiles (Exists: True)
+[01:22:59 DBG] Provider official: Found 39 files in docs/json/radarr/quality-profiles
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/quality-profiles (Exists: True)
+[01:22:59 DBG] Provider official: Found 23 files in docs/json/sonarr/quality-profiles
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/radarr/quality-profile-groups (Exists: True)
+[01:22:59 DBG] Provider official: Found 1 files in docs/json/radarr/quality-profile-groups
+[01:22:59 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:22:59 DBG] Provider official: Checking docs/json/sonarr/quality-profile-groups (Exists: True)
+[01:22:59 DBG] Provider official: Found 1 files in docs/json/sonarr/quality-profile-groups
+[01:22:59 INF] Initializing provider: official (type: config-templates)
+[01:22:59 DBG] Using URL: https://github.com/recyclarr/config-templates.git, Refs: ["v8","master","main"]
+[01:22:59 DBG] Initializing new repository at /config/resources/config-templates/git/official
+[01:22:59 DBG] Executing git command with args: ["init"]
+[01:22:59 DBG] Command Output: Initialized empty Git repository in /config/resources/config-templates/git/official/.git/
+[01:22:59 DBG] Attempting to fetch reference: v8
+[01:22:59 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/recyclarr/config-templates.git","v8"]
+[01:22:59 DBG] Command Output: 
+[01:22:59 DBG] Failed to fetch reference v8: fatal: couldn't find remote ref v8
+
+[01:22:59 DBG] Attempting to fetch reference: master
+[01:22:59 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/recyclarr/config-templates.git","master"]
+[01:23:01 DBG] Command Output: 
+[01:23:01 DBG] Successfully fetched reference: master
+[01:23:01 DBG] Executing git command with args: ["reset","--hard","FETCH_HEAD"]
+[01:23:01 DBG] Command Output: HEAD is now at 9faf65f chore: align guidance with current template architecture
+[01:23:01 DBG] Loading config file: /config/recyclarr.yml
+[01:23:01 DBG] recyclarr.yml: ConfigIncludes: Querying Radarr config includes
+[01:23:01 DBG] recyclarr.yml: ConfigIncludes: Found 0 Radarr includes in registry
+[01:23:01 DBG] recyclarr.yml: ConfigIncludes: Retrieved 0 unique Radarr includes
+[01:23:01 ERR] Exiting due to fatal error: Instance 'movies': Unable to find include template with name 'radarr-quality-definition-movie'
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.ProcessIncludes[T](IReadOnlyDictionary`2 configs, ServiceConfigMerger`1 merger, SupportedServices serviceType) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 99
+   at Recyclarr.Config.Parsing.PostProcessing.IncludePostProcessor.Process(RootConfigYaml config) in /source/src/Recyclarr.Core/Config/Parsing/PostProcessing/IncludePostProcessor.cs:line 29
+   at Recyclarr.Config.Parsing.ConfigurationLoader.<>c.<ProcessLoadedConfigs>b__7_0(RootConfigYaml current, IConfigPostProcessor processor) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 52
+   at System.Linq.Enumerable.Aggregate[TSource,TAccumulate](IEnumerable`1 source, TAccumulate seed, Func`3 func)
+   at Recyclarr.Config.Parsing.ConfigurationLoader.ProcessLoadedConfigs(RootConfigYaml config) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 50
+   at Recyclarr.Config.Parsing.ConfigurationLoader.Load(IFileInfo file) in /source/src/Recyclarr.Core/Config/Parsing/ConfigurationLoader.cs:line 28
+   at Recyclarr.Cli.Processors.ConfigPipelineFactory.Load(IEnumerable`1 files) in /source/src/Recyclarr.Cli/Processors/ConfigPipelineFactory.cs:line 48
+   at Recyclarr.Cli.Processors.ConfigPipelineFactory.FromDefaultPaths() in /source/src/Recyclarr.Cli/Processors/ConfigPipelineFactory.cs:line 24
+   at Recyclarr.Cli.Processors.Sync.SyncProcessor.LoadConfigs(ISyncSettings settings) in /source/src/Recyclarr.Cli/Processors/Sync/SyncProcessor.cs:line 47
+   at Recyclarr.Cli.Processors.Sync.SyncProcessor.Process(ISyncSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Processors/Sync/SyncProcessor.cs:line 23
+   at Recyclarr.Cli.Console.Commands.SyncCommand.ExecuteAsync(CommandContext context, CliSettings settings, CancellationToken ct) in /source/src/Recyclarr.Cli/Console/Commands/SyncCommand.cs:line 66
+   at Spectre.Console.Cli.CommandExecutor.ExecuteAsync(CommandTree leaf, CommandTree tree, CommandContext context, ITypeResolver resolver, IConfiguration configuration, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/Internal/CommandExecutor.cs:line 257
+   at Spectre.Console.Cli.CommandExecutor.ExecuteAsync(IConfiguration configuration, IEnumerable`1 args, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/Internal/CommandExecutor.cs:line 128
+   at Spectre.Console.Cli.CommandApp.RunAsync(IEnumerable`1 args, CancellationToken cancellationToken) in /_/src/Spectre.Console.Cli/CommandApp.cs:line 77
+   at Recyclarr.Cli.Console.CliSetup.Run(ILifetimeScope scope, IEnumerable`1 args) in /source/src/Recyclarr.Cli/Console/CliSetup.cs:line 98
+   at Recyclarr.Cli.Program.Main(String[] args) in /source/src/Recyclarr.Cli/Program.cs:line 27

@@ -1,0 +1,153 @@
+{"level":"info","message":"Commit Tag: $GIT_SHA","timestamp":"2026-08-19T05:03:22.713Z"}
+{"level":"info","message":"Starting Jellyseerr version 2.7.3","timestamp":"2026-08-19T05:03:22.936Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T05:03:23.678Z"}
+{"label":"Server","level":"info","message":"Skipping starting the scheduled jobs as we have no Plex/Jellyfin/Emby servers setup yet","timestamp":"2026-08-19T05:03:23.682Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":0,"type":1},"timestamp":"2026-08-19T05:03:23.683Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":1,"type":2},"timestamp":"2026-08-19T05:03:23.696Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":2,"type":3},"timestamp":"2026-08-19T05:03:23.702Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":3,"type":4},"timestamp":"2026-08-19T05:03:23.707Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":4,"type":5},"timestamp":"2026-08-19T05:03:23.714Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":5,"type":6},"timestamp":"2026-08-19T05:03:23.718Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":6,"type":7},"timestamp":"2026-08-19T05:03:23.721Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":7,"type":8},"timestamp":"2026-08-19T05:03:23.727Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":8,"type":9},"timestamp":"2026-08-19T05:03:23.731Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":9,"type":10},"timestamp":"2026-08-19T05:03:23.736Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":10,"type":11},"timestamp":"2026-08-19T05:03:23.741Z"}
+{"label":"Discover Slider","level":"info","message":"Creating built-in discovery slider","slider":{"enabled":true,"isBuiltIn":true,"order":11,"type":12},"timestamp":"2026-08-19T05:03:23.748Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T05:03:23.828Z"}
+{"level":"info","message":"Commit Tag: $GIT_SHA","timestamp":"2026-08-19T05:56:40.181Z"}
+{"level":"info","message":"Starting Jellyseerr version 2.7.3","timestamp":"2026-08-19T05:56:40.377Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T05:56:40.703Z"}
+{"label":"Server","level":"info","message":"Skipping starting the scheduled jobs as we have no Plex/Jellyfin/Emby servers setup yet","timestamp":"2026-08-19T05:56:40.705Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T05:56:40.755Z"}
+{"error":"INVALID_URL","hostname":"http://http://jellyfin:8096","label":"Auth","level":"error","message":"The provided Emby is invalid or the server is not reachable.","status":404,"timestamp":"2026-08-19T06:05:02.768Z"}
+{"account":{"email":"admin","ip":"::ffff:172.19.0.1","password":"__REDACTED__"},"label":"Auth","level":"warn","message":"Failed login attempt from user with incorrect Jellyfin credentials","timestamp":"2026-08-19T06:05:52.445Z"}
+{"account":{"email":"admin","ip":"::ffff:172.19.0.1","password":"__REDACTED__"},"label":"Auth","level":"warn","message":"Failed login attempt from user with incorrect Jellyfin credentials","timestamp":"2026-08-19T06:06:07.747Z"}
+{"ip":"::ffff:172.19.0.1","jellyfinUsername":"Peter","label":"API","level":"info","message":"Sign-in attempt from Jellyfin user with access to the media server; creating initial admin user for Jellyseerr","timestamp":"2026-08-19T06:06:32.802Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2026-08-19T06:06:32.840Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"3ea134e0-f8a6-494e-9a24-ba7e4d1ec77e","timestamp":"2026-08-19T06:07:42.890Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Full Scan Complete","timestamp":"2026-08-19T06:07:42.895Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"7102d6b1-3634-4de6-b1c9-64492f64c46a","timestamp":"2026-08-19T06:07:47.613Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process library: Movies","timestamp":"2026-08-19T06:07:47.621Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Full Scan Complete","timestamp":"2026-08-19T06:07:47.665Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:10:00.010Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"9105bc9a-7329-478f-926b-be84ba2ec9bb","timestamp":"2026-08-19T06:10:00.012Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:10:00.017Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:10:00.054Z"}
+{"label":"Radarr","level":"error","message":"[Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878","timestamp":"2026-08-19T06:11:41.099Z"}
+{"label":"Radarr","level":"error","message":"[Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878","timestamp":"2026-08-19T06:11:44.542Z"}
+{"label":"Radarr","level":"error","message":"[Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878","timestamp":"2026-08-19T06:11:45.071Z"}
+{"label":"Radarr","level":"error","message":"[Radarr] Failed to retrieve profiles: connect ECONNREFUSED 0.0.30.198:7878","timestamp":"2026-08-19T06:12:12.596Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:15:00.020Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"9b2954f0-ce5f-48c5-b41a-1d1e6af49351","timestamp":"2026-08-19T06:15:00.022Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:15:00.028Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:15:00.078Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Inside Job (2021)","timestamp":"2026-08-19T06:17:42.764Z"}
+{"label":"Media Request","level":"info","mediaId":1,"message":"Request has an override quality profile ID: 3","requestId":1,"timestamp":"2026-08-19T06:17:42.771Z"}
+{"label":"Media Request","level":"info","mediaId":1,"message":"Sent request to Sonarr","requestId":1,"timestamp":"2026-08-19T06:17:42.771Z"}
+{"label":"Sonarr","level":"info","message":"Sonarr accepted request","timestamp":"2026-08-19T06:17:44.203Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:20:00.037Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"716b56e0-54eb-4905-a8ba-84a569497ab2","timestamp":"2026-08-19T06:20:00.038Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:20:00.044Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:20:00.073Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:25:00.032Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"2aad9902-6240-4bbb-a932-e09c9e8221b5","timestamp":"2026-08-19T06:25:00.034Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:25:00.039Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:25:04.083Z"}
+{"label":"Notifications","level":"info","message":"Sending notification(s) for MEDIA_AUTO_APPROVED","subject":"Reacher (2022)","timestamp":"2026-08-19T06:28:43.981Z"}
+{"label":"Media Request","level":"info","mediaId":3,"message":"Request has an override quality profile ID: 3","requestId":2,"timestamp":"2026-08-19T06:28:43.990Z"}
+{"label":"Media Request","level":"info","mediaId":3,"message":"Sent request to Sonarr","requestId":2,"timestamp":"2026-08-19T06:28:43.991Z"}
+{"label":"Sonarr","level":"info","message":"Sonarr accepted request","timestamp":"2026-08-19T06:28:44.345Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:30:00.031Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"9d4d5127-89d4-4452-9007-05c9c7a5a676","timestamp":"2026-08-19T06:30:00.032Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:30:00.038Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:30:04.062Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:35:00.050Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"8c831402-956d-4540-a629-d3b409573238","timestamp":"2026-08-19T06:35:00.053Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:35:00.065Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:35:00.095Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:40:00.024Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Jellyfin Sync Starting","sessionId":"fa3b09b1-72a5-4903-b0e9-8caf1230fac8","timestamp":"2026-08-19T06:40:00.026Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:40:00.035Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:40:00.068Z"}
+{"level":"info","message":"Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c","timestamp":"2026-08-19T06:48:10.951Z"}
+{"level":"info","message":"Starting Seerr version 3.4.1","timestamp":"2026-08-19T06:48:11.097Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T06:48:11.868Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2026-08-19T06:48:11.880Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T06:48:11.932Z"}
+{"account":{"email":"user","ip":"::ffff:172.19.0.1","password":"__REDACTED__"},"label":"Auth","level":"warn","message":"Failed sign-in attempt from user with incorrect Jellyfin credentials","timestamp":"2026-08-19T06:48:20.106Z"}
+{"account":{"email":"admin","ip":"::ffff:172.19.0.1","password":"__REDACTED__"},"label":"Auth","level":"warn","message":"Failed sign-in attempt from user with incorrect Jellyfin credentials","timestamp":"2026-08-19T06:48:24.348Z"}
+{"email":"blueguin02@gmail.com","ip":"::ffff:172.19.0.1","label":"API","level":"warn","message":"Failed sign-in attempt using invalid Seerr password","timestamp":"2026-08-19T06:48:37.538Z","userId":1}
+{"email":"blueguin02@gmail.com","ip":"::ffff:172.19.0.1","label":"API","level":"warn","message":"Failed sign-in attempt using invalid Seerr password","timestamp":"2026-08-19T06:48:38.958Z","userId":1}
+{"account":{"email":"Peter","ip":"::ffff:172.19.0.1","password":"__REDACTED__"},"label":"Auth","level":"warn","message":"Failed sign-in attempt from user with incorrect Jellyfin credentials","timestamp":"2026-08-19T06:48:46.778Z"}
+{"ip":"::ffff:172.19.0.1","jellyfinUsername":"Peter","label":"API","level":"info","message":"Found matching Jellyfin user; updating user with Jellyfin","timestamp":"2026-08-19T06:48:48.554Z"}
+{"level":"info","message":"Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c","timestamp":"2026-08-19T06:48:53.211Z"}
+{"level":"info","message":"Starting Seerr version 3.4.1","timestamp":"2026-08-19T06:48:53.377Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T06:48:54.046Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2026-08-19T06:48:54.057Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T06:48:54.097Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T06:50:00.013Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"d930f4f4-a3ad-47ee-af25-5cd7d7d0e8c0","timestamp":"2026-08-19T06:50:00.015Z"}
+{"label":"Anime-List Sync","level":"info","message":"Downloading latest mapping file","timestamp":"2026-08-19T06:50:00.021Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loading mapping file","timestamp":"2026-08-19T06:50:00.310Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loaded 10724 AniDB items from mapping file","timestamp":"2026-08-19T06:50:00.434Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T06:50:00.434Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T06:50:00.552Z"}
+{"level":"info","message":"Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c","timestamp":"2026-08-19T07:06:38.280Z"}
+{"level":"info","message":"Starting Seerr version 3.4.1","timestamp":"2026-08-19T07:06:38.548Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T07:06:40.169Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2026-08-19T07:06:40.184Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T07:06:40.229Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:10:00.033Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"ed62ffb5-9672-4e06-bffa-336d7e44ff8c","timestamp":"2026-08-19T07:10:00.035Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loading mapping file","timestamp":"2026-08-19T07:10:00.044Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loaded 10724 AniDB items from mapping file","timestamp":"2026-08-19T07:10:00.161Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:10:00.162Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:10:00.282Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:15:00.017Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"3b165398-0cae-4786-bffd-c56897b0fcea","timestamp":"2026-08-19T07:15:00.019Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:15:00.024Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:15:00.054Z"}
+{"level":"info","message":"Commit Tag: 69f73a6f1486fdb51b8ddae9a94a8dfb629f461c","timestamp":"2026-08-19T07:20:18.065Z"}
+{"level":"info","message":"Starting Seerr version 3.4.1","timestamp":"2026-08-19T07:20:18.213Z"}
+{"label":"Notifications","level":"info","message":"Registered notification agents","timestamp":"2026-08-19T07:20:18.813Z"}
+{"label":"Jobs","level":"info","message":"Scheduled jobs loaded","timestamp":"2026-08-19T07:20:18.823Z"}
+{"label":"Server","level":"info","message":"Server ready on port 5055","timestamp":"2026-08-19T07:20:18.863Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:25:00.034Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"895eecf4-8bc3-46cc-8edb-f56f52ec4437","timestamp":"2026-08-19T07:25:00.037Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loading mapping file","timestamp":"2026-08-19T07:25:00.046Z"}
+{"label":"Anime-List Sync","level":"info","message":"Loaded 10724 AniDB items from mapping file","timestamp":"2026-08-19T07:25:00.190Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:25:00.191Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:25:00.211Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:30:00.021Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"55fe8c70-f742-403a-9368-f3c4716d1c38","timestamp":"2026-08-19T07:30:00.023Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:30:00.033Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:30:00.060Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:35:00.020Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"242f03cc-8563-477e-a058-ea3f09c3b732","timestamp":"2026-08-19T07:35:00.021Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:35:00.027Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:35:00.054Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:40:00.018Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"454f75dc-66fc-4d59-b9ac-688613afaa24","timestamp":"2026-08-19T07:40:00.019Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:40:00.024Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:40:00.054Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:45:00.023Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"7f26fb55-095c-43ee-af57-ac7dddf73f72","timestamp":"2026-08-19T07:45:00.024Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:45:00.029Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:45:00.062Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:50:00.029Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"e8dbf494-e356-44aa-9a75-1d5c6a77bb14","timestamp":"2026-08-19T07:50:00.030Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:50:00.038Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:50:00.068Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T07:55:00.019Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"94ae1584-4799-46a7-a259-b4530ce3cfdc","timestamp":"2026-08-19T07:55:00.024Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T07:55:00.039Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T07:55:00.071Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Jellyfin Recently Added Scan","timestamp":"2026-08-19T08:00:00.013Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Scan starting","sessionId":"0d44ea51-b70b-47d7-b4a4-b2db11b484b4","timestamp":"2026-08-19T08:00:00.014Z"}
+{"label":"Jobs","level":"info","message":"Starting scheduled job: Radarr Scan","timestamp":"2026-08-19T08:00:00.021Z"}
+{"label":"Radarr Scan","level":"info","message":"Scan starting","sessionId":"ee23af1f-363c-4dae-b035-c9a2188f4a7a","timestamp":"2026-08-19T08:00:00.022Z"}
+{"label":"Radarr Scan","level":"info","message":"Skipping orphaned movie cleanup: no standard Radarr servers were scanned.","timestamp":"2026-08-19T08:00:00.023Z"}
+{"label":"Radarr Scan","level":"info","message":"Radarr scan complete","timestamp":"2026-08-19T08:00:00.023Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Beginning to process recently added for library: Movies","timestamp":"2026-08-19T08:00:00.028Z"}
+{"label":"Jellyfin Sync","level":"info","message":"Recently Added Scan Complete","timestamp":"2026-08-19T08:00:00.054Z"}
