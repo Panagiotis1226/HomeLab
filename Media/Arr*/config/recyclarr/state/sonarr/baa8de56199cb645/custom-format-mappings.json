@@ -1,0 +1,189 @@
+{
+  "mappings": [
+    {
+      "trash_id": "ec8fa7296b64e8cd390a1600981f3923",
+      "name": "Repack/Proper",
+      "service_id": 1
+    },
+    {
+      "trash_id": "eb3d5cc0a2be0db205fb823640db6a3c",
+      "name": "Repack2",
+      "service_id": 2
+    },
+    {
+      "trash_id": "44e7c4de10ae50265753082e5dc76047",
+      "name": "Repack3",
+      "service_id": 3
+    },
+    {
+      "trash_id": "e6258996055b9fbab7e9cb2f75819294",
+      "name": "WEB Tier 01",
+      "service_id": 4
+    },
+    {
+      "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
+      "name": "WEB Tier 02",
+      "service_id": 5
+    },
+    {
+      "trash_id": "d84935abd3f8556dcd51d4f27e22d0a6",
+      "name": "WEB Tier 03",
+      "service_id": 6
+    },
+    {
+      "trash_id": "d0c516558625b04b363fa6c5c2c7cfd4",
+      "name": "WEB Scene",
+      "service_id": 7
+    },
+    {
+      "trash_id": "d660701077794679fd59e8bdf4ce3a29",
+      "name": "AMZN",
+      "service_id": 8
+    },
+    {
+      "trash_id": "d9e511921c8cedc7282e291b0209cdc5",
+      "name": "ATV",
+      "service_id": 9
+    },
+    {
+      "trash_id": "f67c9ca88f463a48346062e8ad07713f",
+      "name": "ATVP",
+      "service_id": 10
+    },
+    {
+      "trash_id": "77a7b25585c18af08f60b1547bb9b4fb",
+      "name": "CC",
+      "service_id": 11
+    },
+    {
+      "trash_id": "36b72f59f4ea20aad9316f475f2d9fbb",
+      "name": "DCU",
+      "service_id": 12
+    },
+    {
+      "trash_id": "89358767a60cc28783cdc3d0be9388a4",
+      "name": "DSNP",
+      "service_id": 13
+    },
+    {
+      "trash_id": "7a235133c87f7da4c8cccceca7e3c7a6",
+      "name": "HBO",
+      "service_id": 14
+    },
+    {
+      "trash_id": "a880d6abc21e7c16884f3ae393f84179",
+      "name": "HMAX",
+      "service_id": 15
+    },
+    {
+      "trash_id": "f6cce30f1733d5c8194222a7507909bb",
+      "name": "HULU",
+      "service_id": 16
+    },
+    {
+      "trash_id": "0ac24a2a68a9700bcb7eeca8e5cd644c",
+      "name": "iT",
+      "service_id": 17
+    },
+    {
+      "trash_id": "81d1fbf600e2540cee87f3a23f9d3c1c",
+      "name": "MAX",
+      "service_id": 18
+    },
+    {
+      "trash_id": "d34870697c9db575f17700212167be23",
+      "name": "NF",
+      "service_id": 19
+    },
+    {
+      "trash_id": "1656adc6d7bb2c8cca6acfb6592db421",
+      "name": "PCOK",
+      "service_id": 20
+    },
+    {
+      "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
+      "name": "PMTP",
+      "service_id": 21
+    },
+    {
+      "trash_id": "6eb71887a8db6e783dd398446eb0e65d",
+      "name": "PLAY",
+      "service_id": 22
+    },
+    {
+      "trash_id": "da393fd4e2c0cce7c9dc2669c43e0593",
+      "name": "ROKU",
+      "service_id": 23
+    },
+    {
+      "trash_id": "ae58039e1319178e6be73caab5c42166",
+      "name": "SHO",
+      "service_id": 24
+    },
+    {
+      "trash_id": "1efe8da11bfd74fbbcd4d8117ddb9213",
+      "name": "STAN",
+      "service_id": 25
+    },
+    {
+      "trash_id": "9623c5c9cac8e939c1b9aedd32f640bf",
+      "name": "SYFY",
+      "service_id": 26
+    },
+    {
+      "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+      "name": "x265 (HD)",
+      "service_id": 27
+    },
+    {
+      "trash_id": "ae575f95ab639ba5d15f663bf019e3e8",
+      "name": "Language: Not Original",
+      "service_id": 28
+    },
+    {
+      "trash_id": "218e93e5702f44a68ad9e3c6ba87d2f0",
+      "name": "HD Streaming Boost",
+      "service_id": 29
+    },
+    {
+      "trash_id": "43b3cf48cb385cd3eac608ee6bca7f09",
+      "name": "UHD Streaming Boost",
+      "service_id": 30
+    },
+    {
+      "trash_id": "15a05bc7c1a36e2b57fd628f8977e2fc",
+      "name": "AV1",
+      "service_id": 31
+    },
+    {
+      "trash_id": "32b367365729d530ca1c124a0b180c64",
+      "name": "Bad Dual Groups",
+      "service_id": 32
+    },
+    {
+      "trash_id": "85c61753df5da1fb2aab6f2a47426b09",
+      "name": "BR-DISK",
+      "service_id": 33
+    },
+    {
+      "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
+      "name": "Extras",
+      "service_id": 34
+    },
+    {
+      "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
+      "name": "LQ",
+      "service_id": 35
+    },
+    {
+      "trash_id": "e2315f990da2e2cbfc9fa5b7a6fcfe48",
+      "name": "LQ (Release Title)",
+      "service_id": 36
+    },
+    {
+      "trash_id": "23297a736ca77c0fc8e70f8edd7ee56c",
+      "name": "Upscaled",
+      "service_id": 37
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+[01:23:34 DBG] Recyclarr Version: 8.7.1+Branch.-no-branch-.Sha.01e2b68f229e97db3bc383e2a47c3cab99db83fb
+[01:23:34 DBG] App Data Dir: /config
+[01:23:34 INF] Initializing provider: official (type: trash-guides)
+[01:23:34 DBG] Using URL: https://github.com/TRaSH-Guides/Guides.git, Refs: ["master","main"]
+[01:23:34 DBG] Executing git command with args: ["status"]
+[01:23:34 DBG] Command Output: On branch master
+nothing to commit, working tree clean
+[01:23:34 DBG] Attempting to fetch reference: master
+[01:23:34 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/TRaSH-Guides/Guides.git","master"]
+[01:23:35 DBG] Command Output: 
+[01:23:35 DBG] Successfully fetched reference: master
+[01:23:35 DBG] Executing git command with args: ["reset","--hard","FETCH_HEAD"]
+[01:23:35 DBG] Command Output: HEAD is now at 1d7937b feat(starr): Add RlsGrp `3L` to the `TrueHD Atmos` Custom Format (#2857)
+[01:23:35 DBG] MapResourcePaths called for provider official at /config/resources/trash-guides/git/official
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/cf (Exists: True)
+[01:23:35 DBG] Provider official: Found 241 files in docs/json/radarr/cf
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/quality-size (Exists: True)
+[01:23:35 DBG] Provider official: Found 4 files in docs/json/radarr/quality-size
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/naming (Exists: True)
+[01:23:35 DBG] Provider official: Found 1 files in docs/json/radarr/naming
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/cf (Exists: True)
+[01:23:35 DBG] Provider official: Found 235 files in docs/json/sonarr/cf
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/quality-size (Exists: True)
+[01:23:35 DBG] Provider official: Found 2 files in docs/json/sonarr/quality-size
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/naming (Exists: True)
+[01:23:35 DBG] Provider official: Found 1 files in docs/json/sonarr/naming
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/cf-groups (Exists: True)
+[01:23:35 DBG] Provider official: Found 40 files in docs/json/radarr/cf-groups
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/cf-groups (Exists: True)
+[01:23:35 DBG] Provider official: Found 38 files in docs/json/sonarr/cf-groups
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/quality-profiles (Exists: True)
+[01:23:35 DBG] Provider official: Found 39 files in docs/json/radarr/quality-profiles
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/quality-profiles (Exists: True)
+[01:23:35 DBG] Provider official: Found 23 files in docs/json/sonarr/quality-profiles
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/radarr/quality-profile-groups (Exists: True)
+[01:23:35 DBG] Provider official: Found 1 files in docs/json/radarr/quality-profile-groups
+[01:23:35 DBG] Provider official: GlobJsonFiles received 1 paths
+[01:23:35 DBG] Provider official: Checking docs/json/sonarr/quality-profile-groups (Exists: True)
+[01:23:35 DBG] Provider official: Found 1 files in docs/json/sonarr/quality-profile-groups
+[01:23:35 INF] Initializing provider: official (type: config-templates)
+[01:23:35 DBG] Using URL: https://github.com/recyclarr/config-templates.git, Refs: ["v8","master","main"]
+[01:23:35 DBG] Executing git command with args: ["status"]
+[01:23:35 DBG] Command Output: On branch master
+nothing to commit, working tree clean
+[01:23:35 DBG] Attempting to fetch reference: v8
+[01:23:35 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/recyclarr/config-templates.git","v8"]
+[01:23:36 DBG] Command Output: 
+[01:23:36 DBG] Failed to fetch reference v8: fatal: couldn't find remote ref v8
+
+[01:23:36 DBG] Attempting to fetch reference: master
+[01:23:36 DBG] Executing git command with args: ["fetch","--depth","1","https://github.com/recyclarr/config-templates.git","master"]
+[01:23:36 DBG] Command Output: 
+[01:23:36 DBG] Successfully fetched reference: master
+[01:23:36 DBG] Executing git command with args: ["reset","--hard","FETCH_HEAD"]
+[01:23:36 DBG] Command Output: HEAD is now at 9faf65f chore: align guidance with current template architecture
+[01:23:36 DBG] QualityProfile: Querying Radarr quality profiles
+[01:23:36 DBG] QualityProfile: Found 39 quality profile files in registry
+[01:23:36 DBG] QualityProfile: Retrieved 39 Radarr quality profiles
+[01:23:36 DBG] Found 39 quality profiles for Radarr
+[01:23:36 DBG] Cleaning up logs using max files of 20

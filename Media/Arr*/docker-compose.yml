@@ -1,0 +1,231 @@
+# ============================================================================
+#  Jellyfin + *Arr media stack  —  built to the TRaSH Guides spec
+#  https://trash-guides.info
+#
+#  Scope: MOVIES + TV SHOWS only. Usenet (SABnzbd) primary, torrents
+#  (qBittorrent) as fallback so every Jellyseerr request can be fulfilled.
+#
+#  Everything lives inside this folder:
+#     ./config/<app>   -> app databases & settings
+#     ./data           -> ONE mount, so hardlinks + atomic moves work
+#
+#  Start:  docker compose up -d
+#  Logs:   docker compose logs -f
+#  Stop:   docker compose down
+# ============================================================================
+
+name: arrstack
+
+# ---- shared bits ------------------------------------------------------------
+x-common-env: &common-env
+  PUID: ${PUID:-1000}
+  PGID: ${PGID:-1000}
+  TZ: ${TZ:-America/Toronto}
+  UMASK: ${UMASK:-002}
+
+x-common: &common
+  restart: unless-stopped
+  networks: [arrnet]
+
+networks:
+  arrnet:
+    name: arrnet
+    driver: bridge
+
+volumes:
+  sabnzbd_config:
+
+services:
+
+  # ==========================================================================
+  # JELLYFIN — media server
+  # http://localhost:8096
+  # ==========================================================================
+  jellyfin:
+    <<: *common
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      <<: *common-env
+      JELLYFIN_PublishedServerUrl: ${JELLYFIN_URL:-http://localhost:8096}
+    volumes:
+      - ./config/jellyfin:/config
+      - ./data/media:/data/media          # ONLY the library. Never the downloads.
+    ports:
+      - "8096:8096"                        # HTTP web UI
+      # - "8920:8920"                      # HTTPS (only if you set up a cert)
+      # - "7359:7359/udp"                  # client auto-discovery on the LAN
+      # - "1900:1900/udp"                  # DLNA
+    # ------------------------------------------------------------------------
+    # HARDWARE TRANSCODING
+    # macOS / Docker Desktop: NOT POSSIBLE. The Apple GPU is not exposed to the
+    # Linux VM. Leave this commented out while testing on the M4.
+    #
+    # On the i7-12xxx Linux box: that CPU has an Intel UHD 770 iGPU, which means
+    # Quick Sync works and is excellent (~10+ simultaneous 1080p transcodes).
+    # Uncomment the two blocks below, then set the group id to match your host:
+    #     getent group render | cut -d: -f3
+    # ------------------------------------------------------------------------
+    # devices:
+    #   - /dev/dri:/dev/dri
+    # group_add:
+    #   - "989"        # <- your host's "render" group id
+    #   - "44"         # <- your host's "video" group id
+    #
+    # NVIDIA instead? Remove the two blocks above and use:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  # ==========================================================================
+  # SONARR — TV shows
+  # http://localhost:8989
+  # ==========================================================================
+  sonarr:
+    <<: *common
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment: *common-env
+    volumes:
+      - ./config/sonarr:/config
+      - ./data:/data                       # THE WHOLE /data. This is the TRaSH rule.
+    ports:
+      - "8989:8989"
+    depends_on: [sabnzbd, qbittorrent]
+
+  # ==========================================================================
+  # RADARR — movies
+  # http://localhost:7878
+  # ==========================================================================
+  radarr:
+    <<: *common
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment: *common-env
+    volumes:
+      - ./config/radarr:/config
+      - ./data:/data                       # THE WHOLE /data. This is the TRaSH rule.
+    ports:
+      - "7878:7878"
+    depends_on: [sabnzbd, qbittorrent]
+
+  # ==========================================================================
+  # PROWLARR — indexer manager. Configure indexers ONCE here, it pushes them
+  # to Sonarr + Radarr automatically.
+  # http://localhost:9696
+  # ==========================================================================
+  prowlarr:
+    <<: *common
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment: *common-env
+    volumes:
+      - ./config/prowlarr:/config
+    ports:
+      - "9696:9696"
+
+  # ==========================================================================
+  # FLARESOLVERR — solves Cloudflare challenges for a handful of public
+  # torrent indexers. Usenet indexers don't need it. Harmless to leave running.
+  # ==========================================================================
+  flaresolverr:
+    <<: *common
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    environment:
+      LOG_LEVEL: info
+      TZ: ${TZ:-America/Toronto}
+    ports:
+      - "8191:8191"
+
+  # ==========================================================================
+  # SABNZBD — Usenet downloader (primary)
+  # http://localhost:8080
+  # ==========================================================================
+  sabnzbd:
+    <<: *common
+    image: lscr.io/linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    environment: *common-env
+    # NOTE: hostname whitelist ("sabnzbd,localhost,127.0.0.1") is set inside
+    # SABnzbd's own config (Settings -> Special -> host_whitelist), persisted in
+    # the sabnzbd_config volume. The SABNZBD__HOST_WHITELIST_ENTRIES env var is
+    # not a real SABnzbd setting and did nothing. If you move to another machine
+    # and access SAB by LAN IP, add that IP to the whitelist in the UI.
+    volumes:
+      # Named volume, NOT a bind mount: SABnzbd's sqlite history DB fails
+      # intermittently on macOS VirtioFS bind mounts ("readonly database").
+      # Back up with: docker run --rm -v arrstack_sabnzbd_config:/c -v $PWD:/out alpine tar czf /out/sabnzbd-config.tgz -C /c .
+      - sabnzbd_config:/config
+      - ./data/usenet:/data/usenet         # incomplete + complete, nothing else
+    ports:
+      - "8080:8080"
+
+  # ==========================================================================
+  # QBITTORRENT — torrent downloader (fallback, so requests that have no
+  # Usenet release still get filled). No VPN, per your call.
+  # http://localhost:8081
+  # ==========================================================================
+  qbittorrent:
+    <<: *common
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      <<: *common-env
+      WEBUI_PORT: 8081
+      TORRENTING_PORT: 6881
+    volumes:
+      - ./config/qbittorrent:/config
+      - ./data/torrents:/data/torrents     # downloads + seeding, nothing else
+    ports:
+      - "8081:8081"
+      - "6881:6881"
+      - "6881:6881/udp"
+
+  # ==========================================================================
+  # SEERR — request front-end (successor to Jellyseerr; database was
+  # auto-migrated on first boot). Users search here; it hands the request
+  # to Radarr/Sonarr, which grab from Usenet first, torrents second.
+  # http://localhost:5055
+  # ==========================================================================
+  seerr:
+    <<: *common
+    image: seerr/seerr:v3
+    container_name: seerr
+    init: true                              # required by seerr (runs as node/1000)
+    environment:
+      TZ: ${TZ:-America/Toronto}
+      LOG_LEVEL: info
+      PORT: 5055
+    volumes:
+      - ./config/seerr:/app/config
+    ports:
+      - "5055:5055"
+    depends_on: [jellyfin, radarr, sonarr]
+
+  # ==========================================================================
+  # RECYCLARR — this is the piece that actually makes it "a TRaSH setup".
+  # Pushes TRaSH quality definitions, quality profiles and custom formats into
+  # Radarr + Sonarr on a schedule. Reads ./config/recyclarr/recyclarr.yml
+  # ==========================================================================
+  recyclarr:
+    <<: *common
+    # Pinned to v8 (no :latest tag on ghcr). Config lives in
+    # config/recyclarr/configs/ in the v8 format; the old v7 `include:`-style
+    # recyclarr.yml is kept as recyclarr.yml.v7.bak. TRaSH guide data is
+    # fetched fresh at runtime, so custom formats stay current.
+    image: ghcr.io/recyclarr/recyclarr:8
+    container_name: recyclarr
+    user: ${PUID:-1000}:${PGID:-1000}
+    environment:
+      TZ: ${TZ:-America/Toronto}
+      CRON_SCHEDULE: ${RECYCLARR_CRON:-0 4 * * *}   # daily 04:00
+      RADARR_API_KEY: ${RADARR_API_KEY:-}
+      SONARR_API_KEY: ${SONARR_API_KEY:-}
+    volumes:
+      - ./config/recyclarr:/config
+    depends_on: [radarr, sonarr]

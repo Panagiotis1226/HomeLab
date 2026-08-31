@@ -1,0 +1,204 @@
+{
+  "mappings": [
+    {
+      "trash_id": "ed27ebfef2f323e964fb1f61391bcb35",
+      "name": "HD Bluray Tier 01",
+      "service_id": 1
+    },
+    {
+      "trash_id": "c20c8647f2746a1f4c4262b0fbbeeeae",
+      "name": "HD Bluray Tier 02",
+      "service_id": 2
+    },
+    {
+      "trash_id": "5608c71bcebba0a5e666223bae8c9227",
+      "name": "HD Bluray Tier 03",
+      "service_id": 3
+    },
+    {
+      "trash_id": "c20f169ef63c5f40c2def54abaf4438e",
+      "name": "WEB Tier 01",
+      "service_id": 4
+    },
+    {
+      "trash_id": "403816d65392c79236dcb6dd591aeda4",
+      "name": "WEB Tier 02",
+      "service_id": 5
+    },
+    {
+      "trash_id": "af94e0fe497124d1f9ce732069ec8c3b",
+      "name": "WEB Tier 03",
+      "service_id": 6
+    },
+    {
+      "trash_id": "e7718d7a3ce595f289bfee26adc178f5",
+      "name": "Repack/Proper",
+      "service_id": 7
+    },
+    {
+      "trash_id": "ae43b294509409a6a13919dedd4764c4",
+      "name": "Repack2",
+      "service_id": 8
+    },
+    {
+      "trash_id": "5caaaa1c08c1742aa4342d8c4cc463f2",
+      "name": "Repack3",
+      "service_id": 9
+    },
+    {
+      "trash_id": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+      "name": "AMZN",
+      "service_id": 10
+    },
+    {
+      "trash_id": "df13ed57843877b21ad969184ab6888f",
+      "name": "ATV",
+      "service_id": 11
+    },
+    {
+      "trash_id": "40e9380490e748672c2522eaaeb692f7",
+      "name": "ATVP",
+      "service_id": 12
+    },
+    {
+      "trash_id": "cc5e51a9e85a6296ceefe097a77f12f4",
+      "name": "BCORE",
+      "service_id": 13
+    },
+    {
+      "trash_id": "16622a6911d1ab5d5b8b713d5b0036d4",
+      "name": "CRiT",
+      "service_id": 14
+    },
+    {
+      "trash_id": "84272245b2988854bfb76a16e60baea5",
+      "name": "DSNP",
+      "service_id": 15
+    },
+    {
+      "trash_id": "509e5f41146e278f9eab1ddaceb34515",
+      "name": "HBO",
+      "service_id": 16
+    },
+    {
+      "trash_id": "5763d1b0ce84aff3b21038eea8e9b8ad",
+      "name": "HMAX",
+      "service_id": 17
+    },
+    {
+      "trash_id": "526d445d4c16214309f0fd2b3be18a89",
+      "name": "Hulu",
+      "service_id": 18
+    },
+    {
+      "trash_id": "e0ec9672be6cac914ffad34a6b077209",
+      "name": "iT",
+      "service_id": 19
+    },
+    {
+      "trash_id": "2a6039655313bf5dab1e43523b62c374",
+      "name": "MA",
+      "service_id": 20
+    },
+    {
+      "trash_id": "6a061313d22e51e0f25b7cd4dc065233",
+      "name": "MAX",
+      "service_id": 21
+    },
+    {
+      "trash_id": "170b1d363bd8516fbf3a3eb05d4faff6",
+      "name": "NF",
+      "service_id": 22
+    },
+    {
+      "trash_id": "c9fd353f8f5f1baf56dc601c4cb29920",
+      "name": "PCOK",
+      "service_id": 23
+    },
+    {
+      "trash_id": "e36a0ba1bc902b26ee40818a1d59b8bd",
+      "name": "PMTP",
+      "service_id": 24
+    },
+    {
+      "trash_id": "350e9170619683a55cb9191d0b1ababa",
+      "name": "PLAY",
+      "service_id": 25
+    },
+    {
+      "trash_id": "44c2b54d7c81c1a442a8b2cabeaef54f",
+      "name": "ROKU",
+      "service_id": 26
+    },
+    {
+      "trash_id": "c2863d2a50c9acad1fb50e53ece60817",
+      "name": "STAN",
+      "service_id": 27
+    },
+    {
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "name": "x265 (HD)",
+      "service_id": 28
+    },
+    {
+      "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
+      "name": "3D",
+      "service_id": 29
+    },
+    {
+      "trash_id": "cae4ca30163749b891686f95532519bd",
+      "name": "AV1",
+      "service_id": 30
+    },
+    {
+      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "name": "Bad Dual Groups",
+      "service_id": 31
+    },
+    {
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "name": "Black and White Editions",
+      "service_id": 32
+    },
+    {
+      "trash_id": "ed38b889b31be83fda192888e2286d83",
+      "name": "BR-DISK",
+      "service_id": 33
+    },
+    {
+      "trash_id": "0a3f082873eb454bde444150b70253cc",
+      "name": "Extras",
+      "service_id": 34
+    },
+    {
+      "trash_id": "e6886871085226c3da1830830146846c",
+      "name": "Generated Dynamic HDR",
+      "service_id": 35
+    },
+    {
+      "trash_id": "c465ccc73923871b3eb1802042331306",
+      "name": "Line/Mic Dubbed",
+      "service_id": 36
+    },
+    {
+      "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+      "name": "LQ",
+      "service_id": 37
+    },
+    {
+      "trash_id": "e204b80c87be9497a8a6eaff48f72905",
+      "name": "LQ (Release Title)",
+      "service_id": 38
+    },
+    {
+      "trash_id": "712d74cd88bceb883ee32f773656b1f5",
+      "name": "Sing-Along Versions",
+      "service_id": 39
+    },
+    {
+      "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
+      "name": "Upscaled",
+      "service_id": 40
+    }
+  ]
+}

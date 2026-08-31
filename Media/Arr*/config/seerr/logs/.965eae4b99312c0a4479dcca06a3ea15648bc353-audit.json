@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/app/config/logs/.965eae4b99312c0a4479dcca06a3ea15648bc353-audit.json",
+    "files": [
+        {
+            "date": 1787122090417,
+            "name": "/app/config/logs/seerr-2026-08-19.log",
+            "hash": "b34a5bf34c0075cc05ce437fc4a5b71149c455cd992767df45c3f1eba3fef1f0"
+        }
+    ],
+    "hashType": "sha256"
+}
